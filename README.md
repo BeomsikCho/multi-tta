@@ -29,7 +29,28 @@ We train/validate/test with the below datasets
 
 
 ## Setup
-1. Download the above [datasets](#dataset) and place on same folder named __data__
+1. Download the above [datasets](#dataset) and place on same folder named __data__ as follows:
+```zsh
+data/
+├── ImageNet-C/ 
+    ├── images/ 
+    └── labels.csv
+├── ImageNet-LT/
+    ├── images/
+    └── labels.csv
+├── VisDA-C/
+`   ├── train/
+    ├── validation/
+    └── test/
+├── OfficeHome/
+    ├── Art/
+    ├── Clipart/
+    ├── Product/
+    └── Real_World/
+└── DomainNet/
+    ├── images/
+    └── labels.csv
+```
 
 2. Install the Requirement Libraries
     
@@ -48,9 +69,10 @@ We train/validate/test with the below datasets
     pip install -U -r requirements.txt 
     ```
 
-
 ## Train
-
+```bash
+python3 main.py --config train.py --mode train
+```
 
 
 
