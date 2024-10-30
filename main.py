@@ -1,7 +1,6 @@
-from trainers import Trainer
 import wandb
 
-from utils import Builder
+import trainers
 from utils import setup_cfgs, setup_deterministic
 
 def initialization():
@@ -18,15 +17,14 @@ def initialization():
 
 def main():
     cfgs = initialization()
-    builder = Builder(cfgs)
-
+    
     if cfgs['mode'] == 'train' or cfgs['mode'] == 'all':
-        trainer = builder.build_trainer(cfgs)
+        trainer = getattr(trainers, cfgs['trainer'])
         result = trainer.train()
         wandb.log(result)
 
     if cfgs['mode'] == 'eval' or cfgs['mode'] == 'all':
-        evaluator = builder.build_evaluator(cfgs)
+        evaluator = getattr(evaluator, cfgs['evaluator'])
         result = evaluator.eval()
         wandb.log(result)
     
@@ -34,4 +32,3 @@ if __name__ == "__main__":
     main()
 
 
-    

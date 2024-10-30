@@ -1,5 +1,6 @@
 from typing import Optional
 import transformers
+from torch.utils.data import DataLoader
 
 import datasets
 import trainers
@@ -31,34 +32,25 @@ class Builder(object):
 
         return model, processor
 
-    def build_dataloder(self, dataset: Optional[str]):
-        # DataLoader의 output은 [data, target, domain_id]순으로 작성됨 
+    def build_dataloaders(self,
+                          dataset: Optional[str],
+                          **dataset_cfgs):
         if dataset == None:
-            dataest = self.cfgs['dataset']
-
-        if dataset == 'imagenet-c':
-            dataset = datasets.ImageNetC()
-
+            dataset = self.cfgs['dataset']['name']
+        if dataset_cfgs == None:
+            dataset_cfgs = dataset['dataset']
+        
+        dataset_class = getattr(datasets, dataset)
+        for dataset in dataset_class.build(**dataset_cfgs):
+            dataloader = DataLoader(dataset = dataset,
+                                    batch_size = dataset_cfgs['batch_size'],
+                                    shuffle = dataset_cfgs['shuffle'],
+                                    num_workers = dataset_cfgs['num_workers'])
+        dataloader.name = dataset.name
+        yield dataloader
+        
     def build_optimizer(self, optimizer: Optional[str]):
         pass
-
-    def build_trainer(self, trainer: Optional[str] = None):
-        if trainer == None:
-            trainer = self.cfgs['trainer']
-
-        assert trainer in ['base, tent, eata, sar, emt']
-
-        if trainer == 'base':
-            return trainers.BaseTrainer(self.cfgs)
-        # elif trainer == 'tent':
-        #     trainer = trainers.TentTrainer(self.cfgs)
-        # elif trainer == 'eata':
-        #     trainer = trainers.EataTrainer(self.cfgs)
-        # elif trainer == 'tent':
-        #     trainer = trainers.SarTrainer(self.cfgs)
-        # elif trainer == 'tent': 
-        #     trainer = trainers.EmtTrainer(self.cfgs) # ours
-
 
 
 if __name__ == "__main__":

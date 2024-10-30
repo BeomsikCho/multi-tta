@@ -30,7 +30,7 @@ class ImageNetC(ImageFolder):
                  corrupt: str,
                  level: int
                  ):
-        self.domain_id = self.corruptions[corrupt]
+        self.domain_id = corrupt
                  
         self.name = f"{self.name}/{corrupt}/{level}"
         root = Path(path) / corrupt / str(level)
@@ -47,7 +47,7 @@ class ImageNetC(ImageFolder):
               size: float,
               corruptions = None,
               levels = None):
-        assert set(corruptions) in set(cls.corruptions.keys())
+        assert set(corruptions).issubset(cls.corruptions.keys())
 
         if corruptions == None:
             corruptions = cls.corruptions.keys()
@@ -59,6 +59,7 @@ class ImageNetC(ImageFolder):
                 yield ImageNetC(path, corrupt, level)
 
     def __getitem__(self, idx):
-        return super[idx], self.domain_id
+        img, target = super().__getitem__(idx)
+        return img, target, self.domain_id
     
     
