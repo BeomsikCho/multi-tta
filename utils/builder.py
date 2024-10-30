@@ -37,7 +37,7 @@ class Builder(object):
             dataest = self.cfgs['dataset']
 
         if dataset == 'imagenet-c':
-            dataset = datasets.build()
+            dataset = datasets.ImageNetC()
 
     def build_optimizer(self, optimizer: Optional[str]):
         pass

@@ -27,8 +27,11 @@ def main():
 
     if cfgs['mode'] == 'eval' or cfgs['mode'] == 'all':
         evaluator = builder.build_evaluator(cfgs)
-        result = evaluator.validate()
+        result = evaluator.eval()
         wandb.log(result)
     
 if __name__ == "__main__":
     main()
+
+
+    
