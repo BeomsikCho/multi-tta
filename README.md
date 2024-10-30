@@ -15,7 +15,7 @@ The baseline of our methods is as follows:
 
 ### Model
 The baseline of our methods is as follows:
-* ResNet-50 [[paper](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)] 
+* microsoft/resnet-50 [[paper](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)] 
 * ViT [[paper](https://arxiv.org/abs/2010.11929)]
 
 
