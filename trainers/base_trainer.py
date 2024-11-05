@@ -14,12 +14,14 @@ class MetaTrainer(metaclass=ABCMeta):
 
 
 class BaseTrainer(MetaTrainer):
+    name: 'base'
+
     def __init__(self, cfgs):
         self.cfgs = cfgs
         self.builder = Builder(cfgs)
         
     def train(self):
-        
+
         for dataloader in self.builder.build_dataloaders():
             model, processor = self.builder.build_model()
             optimizer = self.builder.build_optimizer()
@@ -28,7 +30,7 @@ class BaseTrainer(MetaTrainer):
             wandb.log(result, dataloader.name)
 
     def validate(self):
-        pass
+        print("아직 구현 안됨")
     
     def train_step(self, model, dataloader):
         pass

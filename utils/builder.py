@@ -10,7 +10,9 @@ class Builder(object):
         if cfgs:
             self.cfgs = cfgs
 
-    def build_model(self, model: Optional[str], pretrained: bool = True):
+    def build_model(self,
+                    model: Optional[str] = None,
+                    pretrained: bool = True):
         if model == None:
             model = self.cfgs['model']
 
@@ -33,15 +35,16 @@ class Builder(object):
         return model, processor
 
     def build_dataloaders(self,
-                          dataset: Optional[str],
+                          dataset: Optional[str] = None,
                           **dataset_cfgs):
         if dataset == None:
             dataset = self.cfgs['dataset']['name']
-        if dataset_cfgs == None:
-            dataset_cfgs = dataset['dataset']
+        if not dataset_cfgs:
+            dataset_cfgs = self.cfgs['dataset']
         
-        dataset_class = getattr(datasets, dataset)
-        for dataset in dataset_class.build(**dataset_cfgs):
+        breakpoint()
+        dataset_cls = getattr(datasets, dataset)
+        for dataset in dataset_cls.build(**dataset_cfgs):
             dataloader = DataLoader(dataset = dataset,
                                     batch_size = dataset_cfgs['batch_size'],
                                     shuffle = dataset_cfgs['shuffle'],
@@ -49,7 +52,8 @@ class Builder(object):
         dataloader.name = dataset.name
         yield dataloader
         
-    def build_optimizer(self, optimizer: Optional[str]):
+    def build_optimizer(self,
+                        optimizer: Optional[str] = None):
         pass
 
 

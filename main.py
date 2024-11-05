@@ -19,14 +19,17 @@ def main():
     cfgs = initialization()
     
     if cfgs['mode'] == 'train' or cfgs['mode'] == 'all':
-        trainer = getattr(trainers, cfgs['trainer'])
+        trainer_cls = getattr(trainers, cfgs['trainer']['name'])
+        trainer = trainer_cls(cfgs)
         result = trainer.train()
         wandb.log(result)
 
     if cfgs['mode'] == 'eval' or cfgs['mode'] == 'all':
-        evaluator = getattr(evaluator, cfgs['evaluator'])
-        result = evaluator.eval()
-        wandb.log(result)
+        # evaluator_cls = getattr(evaluators, cfgs['evaluator']['name'])
+        # evaluator(cfgs) = evaluator_cls(cfgs)
+        # result = evaluator.eval()
+        # wandb.log(result)
+        pass
     
 if __name__ == "__main__":
     main()

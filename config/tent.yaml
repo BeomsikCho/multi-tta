@@ -3,7 +3,8 @@ model:
   pretrained: True
 
 dataset:
-  name: imagenet-c
+  name: ImageNetC
+  path: ./data/
   corruptions:
     - 'gaussian_noise'
     - 'shot_noise'
