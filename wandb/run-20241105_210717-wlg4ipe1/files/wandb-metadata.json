@@ -1,0 +1,23 @@
+{
+  "os":  "Linux-5.4.0-196-generic-x86_64-with-glibc2.31",
+  "python":  "3.12.7",
+  "startedAt":  "2024-11-05T12:07:17.678184Z",
+  "args":  [
+    "--config",
+    "config/tent.yaml",
+    "--mode",
+    "train"
+  ],
+  "program":  "/home/bscho/works/multi-tta/main.py",
+  "codePath":  "main.py",
+  "git":  {
+    "remote":  "git@github.com:BeomsikCho/multi-tta.git",
+    "commit":  "5e61f8a8feb4c53154ab6fbe549c5455d7131d44"
+  },
+  "email":  "whqjatlr369@gmail.com",
+  "root":  "/home/bscho/works/multi-tta",
+  "host":  "gpu2",
+  "username":  "bscho",
+  "executable":  "/home/bscho/anaconda3/envs/multiTTA/bin/python3",
+  "codePathLocal":  "main.py"
+}
