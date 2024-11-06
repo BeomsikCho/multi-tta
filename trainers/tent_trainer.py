@@ -8,8 +8,8 @@ from utils import Builder
 from utils import softmax_entropy
 
 class TentTrainer(BaseTrainer):
-    def train_step(self, model, device, processor, dataloader, optimizer):
-        model = self.configure_model(model, device)
+    def train_step(self, model, processor, dataloader, optimizer):
+        model = self.configure_model(model, self.device)
         params, param_names = self.collect_params(model)
         optimizer = self.adapt_optimizer(params, optimizer)
 
@@ -17,6 +17,7 @@ class TentTrainer(BaseTrainer):
         correct = 0
         total_sample = 0
         for iteration, (samples, target, domain_id) in enumerate(dataloader):
+            breakpoint()
             samples = processor(samples)
             pred = model(samples['pixel_values'])
             loss = softmax_entropy(pred)
@@ -41,7 +42,9 @@ class TentTrainer(BaseTrainer):
 
 
     @staticmethod
-    def configure_model(model, device: str, adapt_layers):
+    def configure_model(model,
+                        device: str,
+                        adapt_layers = ['BatchNorm', 'GroupNorm', 'LayerNorm']):
         model.train()
         model = model.to(device)
 

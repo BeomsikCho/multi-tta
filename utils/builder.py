@@ -2,6 +2,9 @@ from typing import Optional
 import transformers
 from torch.utils.data import DataLoader
 
+import inspect
+
+from torch import optim
 import datasets
 import trainers
 
@@ -12,9 +15,12 @@ class Builder(object):
 
     def build_model(self,
                     model: Optional[str] = None,
-                    pretrained: bool = True):
+                    pretrained: bool = True,
+                    **model_cfgs):
         if model == None:
-            model = self.cfgs['model']
+            model = self.cfgs['model']['name']
+        elif not model_cfgs:
+            model_cfgs = self.cfgs['model']
 
         if model == 'resnet-50':
             if pretrained:
@@ -42,19 +48,25 @@ class Builder(object):
         if not dataset_cfgs:
             dataset_cfgs = self.cfgs['dataset']
         
-        breakpoint()
         dataset_cls = getattr(datasets, dataset)
         for dataset in dataset_cls.build(**dataset_cfgs):
             dataloader = DataLoader(dataset = dataset,
                                     batch_size = dataset_cfgs['batch_size'],
                                     shuffle = dataset_cfgs['shuffle'],
                                     num_workers = dataset_cfgs['num_workers'])
-        dataloader.name = dataset.name
-        yield dataloader
+            dataloader.name = dataset.name
+            yield dataloader
         
     def build_optimizer(self,
-                        optimizer: Optional[str] = None):
-        pass
+                        optimizer: Optional[str] = None,
+                        **optimizer_cfgs):
+        if not optimizer:
+            optimizer = self.cfgs['optimizer']['name']
+        if not optimizer_cfgs:
+            optimizer_cfgs = self.cfgs['optimizer']
+
+        optimizer_cls = getattr(optim, optimizer)
+        return optimizer_cls
 
 
 if __name__ == "__main__":

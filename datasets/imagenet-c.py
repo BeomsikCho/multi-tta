@@ -33,7 +33,7 @@ class ImageNetC(ImageFolder):
         self.domain_id = corrupt
                  
         self.name = f"{self.name}/{corrupt}/{level}"
-        root = Path(path) / self.name /corrupt / str(level)
+        root = Path(path) / self.name 
         transform = transforms.Compose([
             transforms.Resize((224, 224)),  # Resize the images to 224x224
             transforms.ToTensor(),  # Convert the images to tensors

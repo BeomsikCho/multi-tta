@@ -1,5 +1,5 @@
 model:
-  name: resnet-50
+  name: resnet-50 # [resnet-50]
   pretrained: True
 
 dataset:
@@ -36,3 +36,5 @@ optimizer:
 
 trainer:
   name: TentTrainer
+
+  device: 0

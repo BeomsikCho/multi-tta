@@ -14,17 +14,16 @@ class MetaTrainer(metaclass=ABCMeta):
 
 
 class BaseTrainer(MetaTrainer):
-    name: 'base'
-
     def __init__(self, cfgs):
         self.cfgs = cfgs
         self.builder = Builder(cfgs)
+        self.device = cfgs['device']
         
     def train(self):
-
         for dataloader in self.builder.build_dataloaders():
             model, processor = self.builder.build_model()
             optimizer = self.builder.build_optimizer()
+            
             model = self.train_step(model, processor, dataloader, optimizer)
             result = self.validate_step(model, dataloader)
             wandb.log(result, dataloader.name)
