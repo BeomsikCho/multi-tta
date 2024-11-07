@@ -3,7 +3,6 @@ from torch.nn.functional import adaptive_avg_pool2d
 
 import timm
 import torchvision
-from robustbench.utils import load_model
 
 from abc import *
 
