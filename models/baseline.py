@@ -30,40 +30,35 @@ class ResNet50RobustBench(nn.Module):
 
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['pooler_output'] = avg_pool2d(pred['last_hidden_state'])
-        pred['last_output'] = self.fc(pred['pooler_output'])
+        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
         return pred
 
-
-class ResNet50RobustBench(nn.Module):
+class ResNet50GN(nn.Module):
     def __init__(self):
         super().__init__()
-        total_model = load_model('Standard_R50', dataset='imagenet', threat_model='corruptions')
-        processor, model = list(total_model.children())
-        
-        self.processor = processor
-        self.encoder = nn.Sequential(*list(model.children()))[:-2]
-        self.fc = nn.Sequential(*list(model.children()))[-1]
-    
-    def forward(self, samples):
-        samples = self.processor(samples)
+        total_model = timm.create_model('resnet50_gn', pretrained=True)
+        self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
+        self.fc = nn.Sequential(*list(total_model.children()))[-1]
 
+    def forward(self, samples):
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['pooler_output'] = avg_pool2d(pred['last_hidden_state'])
-        pred['last_output'] = self.fc(pred['pooler_output'])
+        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
         return pred
-
 
 class ViTBase16(nn.Module):
     def __init__(self):
         super().__init__()
-        total_model = timm.create_model('vit_base_patch16_224', pretrained=True)
-        breakpoint()
-
-
-
+        total_model = timm.create_model('vit_base_patch16_224', pretrained=pretrained)
+        self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
+        self.fc = nn.Sequential(*list(total_model.children()))[-1]
+        
+    def forward(self, samples):
+        pred = dict()
+        pred['last_hidden_state'] = self.encoder(samples)
+        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
+        return pred
 
 
 if __name__ == "__main__":
-    model = ViTBase16()
+    pass

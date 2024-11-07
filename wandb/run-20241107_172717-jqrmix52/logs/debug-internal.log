@@ -1,0 +1,8 @@
+{"time":"2024-11-07T17:27:17.314564975+09:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T17:27:17.314596134+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_172717-jqrmix52/logs/debug-core.log"}
+{"time":"2024-11-07T17:27:17.424897332+09:00","level":"INFO","msg":"created new stream","id":"jqrmix52"}
+{"time":"2024-11-07T17:27:17.424950143+09:00","level":"INFO","msg":"stream: started","id":"jqrmix52"}
+{"time":"2024-11-07T17:27:17.425120187+09:00","level":"INFO","msg":"sender: started","stream_id":"jqrmix52"}
+{"time":"2024-11-07T17:27:17.425019615+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jqrmix52"}}
+{"time":"2024-11-07T17:27:17.425073278+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jqrmix52"}}
+{"time":"2024-11-07T17:27:17.759137401+09:00","level":"INFO","msg":"Starting system monitor"}

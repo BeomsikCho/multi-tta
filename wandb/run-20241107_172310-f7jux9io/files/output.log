@@ -1,0 +1,51 @@
+> /home/bscho/works/multi-tta/trainers/tent_trainer.py(25)train_step()
+-> loss = softmax_entropy(pred)
+preprocessor_config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [00:00<00:00, 878kB/s]
+config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 502/502 [00:00<00:00, 3.34MB/s]
+Fast image processor class <class 'transformers.models.vit.image_processing_vit_fast.ViTImageProcessorFast'> is available for this model. Using slow image processor class. To use the fast image processor class set `use_fast=True`.
+ImageClassifierOutput(loss=None, logits=tensor([[-0.8844, -0.5341,  0.4849,  ..., -1.3880, -1.6490, -1.4707],
+        [-0.4081, -2.2944, -0.3282,  ..., -0.5545,  0.6268,  0.2589],
+        [ 0.0747, -0.6231,  0.3604,  ...,  0.1461, -0.4103, -1.1531],
+        ...,
+        [ 0.7351, -0.0331,  2.1132,  ..., -0.8403, -0.8634, -0.7042],
+        [-0.7537, -0.3161,  0.7836,  ...,  0.0174, -1.6859, -0.1056],
+        [ 0.2071, -0.6001,  3.7612,  ..., -0.5151, -0.6968, -0.3514]],
+       grad_fn=<AddmmBackward0>), hidden_states=None, attentions=None)
+odict_keys(['logits'])
+tensor([[-0.8844, -0.5341,  0.4849,  ..., -1.3880, -1.6490, -1.4707],
+        [-0.4081, -2.2944, -0.3282,  ..., -0.5545,  0.6268,  0.2589],
+        [ 0.0747, -0.6231,  0.3604,  ...,  0.1461, -0.4103, -1.1531],
+        ...,
+        [ 0.7351, -0.0331,  2.1132,  ..., -0.8403, -0.8634, -0.7042],
+        [-0.7537, -0.3161,  0.7836,  ...,  0.0174, -1.6859, -0.1056],
+        [ 0.2071, -0.6001,  3.7612,  ..., -0.5151, -0.6968, -0.3514]],
+       grad_fn=<AddmmBackward0>)
+--KeyboardInterrupt--
+*** NameError: name 'timm' is not defined
+tensor([[-0.0079, -0.2549, -0.8401,  ..., -1.0571,  0.2776, -0.5990],
+        [ 0.2859, -1.0482, -0.4149,  ..., -0.5638,  0.4997, -0.2835],
+        [ 0.4179,  0.5346,  0.0933,  ...,  0.2201,  0.2242, -0.3965],
+        ...,
+        [-0.3459,  0.2523, -0.2804,  ..., -1.2220, -0.7867,  0.1322],
+        [-0.0115, -0.6012, -0.1810,  ..., -0.6449,  0.3452,  1.3691],
+        [-1.0516, -0.9178,  3.4033,  ..., -1.6852, -0.2331,  0.2608]],
+       grad_fn=<AddmmBackward0>)
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 35, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    result = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 27, in train
+    model = self.train_step(model, processor, dataloader, optimizer)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 25, in train_step
+    loss = softmax_entropy(pred)
+           ^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

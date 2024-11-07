@@ -1,6 +1,5 @@
 model:
-  name: resnet-50 # [resnet-50]
-  pretrained: True
+  name: resnet50 # [resnet50, resnet50-gn, vit-base]
 
 dataset:
   name: ImageNetC

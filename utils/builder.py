@@ -4,9 +4,12 @@ from torch.utils.data import DataLoader
 
 import inspect
 
+import torch 
+
 from torch import optim
 import datasets
 import trainers
+import models
 
 class Builder(object):
     def __init__(self, cfgs: Optional[dict] = None):
@@ -15,29 +18,18 @@ class Builder(object):
 
     def build_model(self,
                     model: Optional[str] = None,
-                    pretrained: bool = True,
                     **model_cfgs):
         if model == None:
-            model = self.cfgs['model']['name']
+            model_name = self.cfgs['model']['name']
         elif not model_cfgs:
             model_cfgs = self.cfgs['model']
 
-        if model == 'resnet-50':
-            if pretrained:
-                model= transformers.ResNetModel.from_pretrained('microsoft/resnet-50') # input should 
-                processor = transformers.AutoImageProcessor.from_pretrained('microsoft/resnet-50')
-            else:
-                model= transformers.ResNetModel(config='microsoft/resnet-50')
-                processor = transformers.AutoImageProcessor(config='microsoft/resnet-50')
-
-        elif model == 'vit-base':
-            if pretrained:
-                model = transformers.ViTForImageClassification.from_pretrained("google/vit-base-patch16-224", attn_implementation="sdpa", torch_dtype=torch.float16)
-                processor = transformers.AutoImageProcessor.from_pretrained('google/vit-base-patch16-224-in21k')
-            else:
-                model = transformers.ViTForImageClassification("google/vit-base-patch16-224", attn_implementation="sdpa", torch_dtype=torch.float16)
-                processor = transformers.AutoImageProcessor(config='google/vit-base-patch16-224-in21k')
-
+        if model_name == 'resnet50':
+            model = models.ResNet50RobustBench()
+        elif model_name == 'resnet50-gn':
+            model = models.ResNet50GN()
+        elif model_name == 'vit-base':
+            model = models.ViTBase16()
         return model, processor
 
     def build_dataloaders(self,
