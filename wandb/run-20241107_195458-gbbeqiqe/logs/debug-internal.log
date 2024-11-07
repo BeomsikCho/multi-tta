@@ -1,0 +1,8 @@
+{"time":"2024-11-07T19:54:58.028909387+09:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T19:54:58.028927041+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_195458-gbbeqiqe/logs/debug-core.log"}
+{"time":"2024-11-07T19:54:58.135641076+09:00","level":"INFO","msg":"created new stream","id":"gbbeqiqe"}
+{"time":"2024-11-07T19:54:58.135690089+09:00","level":"INFO","msg":"stream: started","id":"gbbeqiqe"}
+{"time":"2024-11-07T19:54:58.135765814+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"gbbeqiqe"}}
+{"time":"2024-11-07T19:54:58.135817773+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"gbbeqiqe"}}
+{"time":"2024-11-07T19:54:58.135881535+09:00","level":"INFO","msg":"sender: started","stream_id":"gbbeqiqe"}
+{"time":"2024-11-07T19:54:58.538678177+09:00","level":"INFO","msg":"Starting system monitor"}

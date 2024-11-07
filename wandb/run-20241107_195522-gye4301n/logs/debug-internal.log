@@ -1,0 +1,8 @@
+{"time":"2024-11-07T19:55:22.826265062+09:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T19:55:22.826277275+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_195522-gye4301n/logs/debug-core.log"}
+{"time":"2024-11-07T19:55:22.933086682+09:00","level":"INFO","msg":"created new stream","id":"gye4301n"}
+{"time":"2024-11-07T19:55:22.933130877+09:00","level":"INFO","msg":"stream: started","id":"gye4301n"}
+{"time":"2024-11-07T19:55:22.933282566+09:00","level":"INFO","msg":"sender: started","stream_id":"gye4301n"}
+{"time":"2024-11-07T19:55:22.933198315+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"gye4301n"}}
+{"time":"2024-11-07T19:55:22.93324825+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"gye4301n"}}
+{"time":"2024-11-07T19:55:23.418336889+09:00","level":"INFO","msg":"Starting system monitor"}

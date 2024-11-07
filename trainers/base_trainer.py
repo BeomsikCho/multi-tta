@@ -15,22 +15,26 @@ class MetaTrainer(metaclass=ABCMeta):
 
 class BaseTrainer(MetaTrainer):
     def __init__(self, cfgs):
-        self.cfgs = cfgs
         self.builder = Builder(cfgs)
-        self.device = cfgs['device']
+        self.cfgs = cfgs['trainer']
+        self.device = self.cfgs['device']
         
     def train(self):
         for dataloader in self.builder.build_dataloaders():
-            model, processor = self.builder.build_model()
+            model = self.builder.build_model()
             optimizer = self.builder.build_optimizer()
             
-            model = self.train_step(model, processor, dataloader, optimizer)
+            model = self.train_step(model, dataloader, optimizer)
             result = self.validate_step(model, dataloader)
             wandb.log(result, dataloader.name)
 
     def validate(self):
-        print("아직 구현 안됨")
+        for dataloader in self.builder.build_dataloaders():
+            model = self.builder.build_model()
     
+            result = self.validate_step(model, dataloader)
+            wandb.log(result, dataloader.name)
+
     def train_step(self, model, dataloader):
         pass
 

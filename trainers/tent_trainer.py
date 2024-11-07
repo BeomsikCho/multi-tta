@@ -8,23 +8,20 @@ from utils import Builder
 from utils import softmax_entropy
 
 class TentTrainer(BaseTrainer):
-    def train_step(self, model, processor, dataloader, optimizer):
+    def train_step(self, model, dataloader, optimizer):
         model = self.configure_model(model, self.device)
-        params, param_names = self.collect_params(model)
+        params, _ = self.collect_params(model)
         optimizer = self.adapt_optimizer(params, optimizer)
 
         train_loss = 0
         correct = 0
         total_sample = 0
         for iteration, (samples, target, domain_id) in enumerate(dataloader):
-            
-            # samples = processor(samples)
-            # pred = model(samples['pixel_values'])
-            pred = model(samples)
-            breakpoint()
-            loss = softmax_entropy(pred)
+            samples = samples.to(self.device)
+            pred = model(samples) # 여기서 segmentation fault (core dumped) 발생
+            loss = softmax_entropy(pred['logits'])
             loss.backward()
-
+            
             optimizer.step()
 
             train_loss += loss.item()

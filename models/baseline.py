@@ -1,5 +1,5 @@
 import torch.nn as nn
-from torch.nn.functional import avg_pool2d
+from torch.nn.functional import adaptive_avg_pool2d
 
 import timm
 from robustbench.utils import load_model
@@ -17,7 +17,6 @@ class MetaModel(metaclass=ABCMeta):
 class ResNet50RobustBench(nn.Module):
     def __init__(self):
         super().__init__()
-        breakpoint()
         total_model = load_model('Standard_R50', dataset='imagenet', threat_model='corruptions')
         processor, model = list(total_model.children())
         
@@ -30,7 +29,7 @@ class ResNet50RobustBench(nn.Module):
 
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
+        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
         return pred
 
 class ResNet50GN(nn.Module):
@@ -43,20 +42,20 @@ class ResNet50GN(nn.Module):
     def forward(self, samples):
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
+        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
         return pred
 
 class ViTBase16(nn.Module):
     def __init__(self):
         super().__init__()
-        total_model = timm.create_model('vit_base_patch16_224', pretrained=pretrained)
+        total_model = timm.create_model('vit_base_patch16_224', pretrained=True)
         self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
         self.fc = nn.Sequential(*list(total_model.children()))[-1]
         
     def forward(self, samples):
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(avg_pool2d(pred['pooler_output']))
+        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
         return pred
 
 

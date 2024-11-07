@@ -1,0 +1,16 @@
+{"time":"2024-11-07T20:14:37.19626802+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T20:14:37.196279922+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_201437-alp2i9w3/logs/debug-core.log"}
+{"time":"2024-11-07T20:14:37.304274519+09:00","level":"INFO","msg":"created new stream","id":"alp2i9w3"}
+{"time":"2024-11-07T20:14:37.304316359+09:00","level":"INFO","msg":"stream: started","id":"alp2i9w3"}
+{"time":"2024-11-07T20:14:37.30433241+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"alp2i9w3"}}
+{"time":"2024-11-07T20:14:37.304391032+09:00","level":"INFO","msg":"sender: started","stream_id":"alp2i9w3"}
+{"time":"2024-11-07T20:14:37.30444791+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"alp2i9w3"}}
+{"time":"2024-11-07T20:14:37.760580866+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T20:14:38.581671686+09:00","level":"INFO","msg":"stream: closing","id":"alp2i9w3"}
+{"time":"2024-11-07T20:14:38.581718095+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T20:14:38.582955136+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T20:14:39.485562458+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T20:14:39.720956734+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"alp2i9w3"}}
+{"time":"2024-11-07T20:14:39.721017691+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"alp2i9w3"}}
+{"time":"2024-11-07T20:14:39.721060442+09:00","level":"INFO","msg":"sender: closed","stream_id":"alp2i9w3"}
+{"time":"2024-11-07T20:14:39.721172606+09:00","level":"INFO","msg":"stream: closed","id":"alp2i9w3"}

@@ -30,7 +30,7 @@ class Builder(object):
             model = models.ResNet50GN()
         elif model_name == 'vit-base':
             model = models.ViTBase16()
-        return model, processor
+        return model
 
     def build_dataloaders(self,
                           dataset: Optional[str] = None,
@@ -64,7 +64,7 @@ class Builder(object):
 if __name__ == "__main__":
     # Test the operation of Builder class
     builder = Builder()
-    model, processor = builder.build_model('resnet-50')
+    model = builder.build_model('resnet-50')
     breakpoint()
     
 
