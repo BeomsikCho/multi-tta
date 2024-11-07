@@ -32,10 +32,10 @@ class Builder(object):
 
         elif model == 'vit-base':
             if pretrained:
-                model= transformers.ResNetModel.from_pretrained('google/vit-base-patch16-224-in21k') # input should 
+                model = transformers.ViTForImageClassification.from_pretrained("google/vit-base-patch16-224", attn_implementation="sdpa", torch_dtype=torch.float16)
                 processor = transformers.AutoImageProcessor.from_pretrained('google/vit-base-patch16-224-in21k')
             else:
-                model= transformers.ResNetModel(config='google/vit-base-patch16-224-in21k')
+                model = transformers.ViTForImageClassification("google/vit-base-patch16-224", attn_implementation="sdpa", torch_dtype=torch.float16)
                 processor = transformers.AutoImageProcessor(config='google/vit-base-patch16-224-in21k')
 
         return model, processor

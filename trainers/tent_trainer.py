@@ -17,9 +17,11 @@ class TentTrainer(BaseTrainer):
         correct = 0
         total_sample = 0
         for iteration, (samples, target, domain_id) in enumerate(dataloader):
+            
+            # samples = processor(samples)
+            # pred = model(samples['pixel_values'])
+            pred = model(samples)
             breakpoint()
-            samples = processor(samples)
-            pred = model(samples['pixel_values'])
             loss = softmax_entropy(pred)
             loss.backward()
 
@@ -40,14 +42,13 @@ class TentTrainer(BaseTrainer):
         })
         return model
 
-
     @staticmethod
     def configure_model(model,
                         device: str,
                         adapt_layers = ['BatchNorm', 'GroupNorm', 'LayerNorm']):
         model.train()
         model = model.to(device)
-
+        
         if adapt_layers != None: return model
 
         model.requires_grad_(False)

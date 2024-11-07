@@ -1,2 +1,4 @@
 wandb
 transformers
+
+git+https://github.com/RobustBench/robustbench.git
