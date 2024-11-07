@@ -1,8 +1,6 @@
-torch==2.2.2 --index-url https://download.pytorch.org/whl/cu118
-torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu118
-torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu118
+torch==2.3.1 --index-url https://download.pytorch.org/whl/cu118
+torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118
 
 wandb
 transformers
-
-git+https://github.com/RobustBench/robustbench.git

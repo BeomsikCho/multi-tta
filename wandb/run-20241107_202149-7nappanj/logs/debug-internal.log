@@ -1,0 +1,16 @@
+{"time":"2024-11-07T20:21:49.940077313+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T20:21:49.940097682+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_202149-7nappanj/logs/debug-core.log"}
+{"time":"2024-11-07T20:21:50.046739236+09:00","level":"INFO","msg":"created new stream","id":"7nappanj"}
+{"time":"2024-11-07T20:21:50.046783801+09:00","level":"INFO","msg":"stream: started","id":"7nappanj"}
+{"time":"2024-11-07T20:21:50.046896175+09:00","level":"INFO","msg":"sender: started","stream_id":"7nappanj"}
+{"time":"2024-11-07T20:21:50.046849747+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"7nappanj"}}
+{"time":"2024-11-07T20:21:50.046920402+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"7nappanj"}}
+{"time":"2024-11-07T20:21:50.380976618+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T20:21:51.194864707+09:00","level":"INFO","msg":"stream: closing","id":"7nappanj"}
+{"time":"2024-11-07T20:21:51.194892791+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T20:21:51.196021786+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T20:21:55.655022075+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T20:21:55.972426977+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"7nappanj"}}
+{"time":"2024-11-07T20:21:55.972517029+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"7nappanj"}}
+{"time":"2024-11-07T20:21:55.972537228+09:00","level":"INFO","msg":"sender: closed","stream_id":"7nappanj"}
+{"time":"2024-11-07T20:21:55.972820769+09:00","level":"INFO","msg":"stream: closed","id":"7nappanj"}

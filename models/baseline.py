@@ -2,6 +2,7 @@ import torch.nn as nn
 from torch.nn.functional import adaptive_avg_pool2d
 
 import timm
+import torchvision
 from robustbench.utils import load_model
 
 from abc import *
@@ -14,15 +15,12 @@ class MetaModel(metaclass=ABCMeta):
     def validate() -> dict:
         pass
 
-class ResNet50RobustBench(nn.Module):
+class ResNet50RobustBench(nn.Module): # RobustBench에서 torchvision거 그대로 사용하고 있었음.
     def __init__(self):
         super().__init__()
-        total_model = load_model('Standard_R50', dataset='imagenet', threat_model='corruptions')
-        processor, model = list(total_model.children())
-        
-        self.processor = processor
-        self.encoder = nn.Sequential(*list(model.children()))[:-2]
-        self.fc = nn.Sequential(*list(model.children()))[-1]
+        total_model = torchvision.models.resnet50(pretrained=True)
+        self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
+        self.fc = nn.Sequential(*list(total_model.children()))[-1]
     
     def forward(self, samples):
         samples = self.processor(samples)
@@ -31,6 +29,7 @@ class ResNet50RobustBench(nn.Module):
         pred['last_hidden_state'] = self.encoder(samples)
         pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
         return pred
+
 
 class ResNet50GN(nn.Module):
     def __init__(self):
@@ -44,6 +43,7 @@ class ResNet50GN(nn.Module):
         pred['last_hidden_state'] = self.encoder(samples)
         pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
         return pred
+
 
 class ViTBase16(nn.Module):
     def __init__(self):
