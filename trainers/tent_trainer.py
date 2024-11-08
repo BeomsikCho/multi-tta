@@ -5,14 +5,18 @@ import wandb
 from tqdm import tqdm
 
 from .base_trainer import BaseTrainer
-from utils import Builder
-from utils import softmax_entropy
+from utils.builder import Builder
+from utils.metric import softmax_entropy
+from utils.common import device_seperation
+
 
 class TentTrainer(BaseTrainer):
     name = 'TentTrainer'
 
     def train_step(self, model, dataloader, optimizer):
-        model = self.configure_model(model, self.device)
+        first_device, _ = device_seperation(self.device)
+        
+        model = self.configure_model(model, first_device)
         params, _ = self.collect_params(model)
         optimizer = self.adapt_optimizer(params, optimizer)
 
@@ -21,7 +25,7 @@ class TentTrainer(BaseTrainer):
         
         optimizer.zero_grad()
         for (samples, target, domain_id) in tqdm(dataloader):
-            samples, target = samples.to(self.device), target.to(self.device)
+            samples, target = samples.to(first_device), target.to(first_device)
             
             pred = model(samples)
             loss = softmax_entropy(pred['logits']).mean(0)

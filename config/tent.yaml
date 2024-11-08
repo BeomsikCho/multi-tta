@@ -23,8 +23,8 @@ dataset:
   levels:
     - 5
 
-  batch_size: 64
-  num_workers: 4
+  batch_size: 256
+  num_workers: 16
   shuffle: True
 
 optimizer:
@@ -35,5 +35,3 @@ optimizer:
 
 trainer:
   name: TentTrainer
-
-  device: 0

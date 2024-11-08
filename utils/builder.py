@@ -11,6 +11,8 @@ import datasets
 import trainers
 import models
 
+from utils.common import device_seperation
+
 class Builder(object):
     def __init__(self, cfgs: Optional[dict] = None):
         if cfgs:
@@ -30,6 +32,12 @@ class Builder(object):
             model = models.ResNet50GN()
         elif model_name == 'vit-base':
             model = models.ViTBase16()
+        
+        first_device, device_ids = device_seperation(self.cfgs['device'])
+
+        if len(device_ids) > 1:
+            model = torch.nn.DataParallel(model, device_ids=device_ids)
+        model.to(first_device)
         return model
 
     def build_dataloaders(self,

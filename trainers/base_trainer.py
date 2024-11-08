@@ -3,10 +3,12 @@ from tqdm import tqdm
 import wandb
 import pandas as pd
 import matplotlib.pyplot as plt
-# import seaborn as sns
 import plotly.express as px
 
+import torch
+
 from utils import Builder
+from utils.common import device_seperation
 
 class MetaTrainer(metaclass=ABCMeta):
     @abstractmethod
@@ -23,8 +25,8 @@ class BaseTrainer(MetaTrainer):
 
     def __init__(self, cfgs):
         self.builder = Builder(cfgs)
+        self.device = cfgs['device']
         self.cfgs = cfgs['trainer']
-        self.device = self.cfgs['device']
         
         # Initialize wandb once
         wandb.login()
@@ -89,15 +91,18 @@ class BaseTrainer(MetaTrainer):
         pass
     
     def validate_step(self, model, dataloader):
+        first_device, _ = device_seperation(self.device)
         model.eval()
         is_correct = 0
         total_samples = 0
-        for (samples, target, domain_id) in tqdm(dataloader):
-            samples, target = samples.to(self.device), target.to(self.device)
-            pred = model(samples)
+        
+        with torch.no_grad():
+            for (samples, target, domain_id) in tqdm(dataloader):
+                samples, target = samples.to(first_device), target.to(first_device)
+                pred = model(samples)
 
-            is_correct += (pred['logits'].argmax(dim=1) == target).sum().item()
-            total_samples += target.size(0)
+                is_correct += (pred['logits'].argmax(dim=1) == target).sum().item()
+                total_samples += target.size(0)
 
         results = dict()
         results['top1_acc'] = is_correct / total_samples

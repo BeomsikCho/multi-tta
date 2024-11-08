@@ -23,3 +23,4 @@ config: {'model': {'name': 'resnet50'}, 'dataset': {'name': 'ImageNetC', 'path':
 2024-11-08 19:21:18,379 INFO    MainThread:2670250 [wandb_run.py:_redirect():2364] Wrapping output streams.
 2024-11-08 19:21:18,379 INFO    MainThread:2670250 [wandb_run.py:_redirect():2389] Redirects installed.
 2024-11-08 19:21:18,381 INFO    MainThread:2670250 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-08 19:59:45,251 WARNING MsgRouterThr:2670250 [router.py:message_loop():75] message_loop has been closed

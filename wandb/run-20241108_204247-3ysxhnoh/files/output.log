@@ -1,0 +1,19 @@
+ 47%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                  | 364/782 [01:02<01:11,  5.83it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 47, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 32, in train_step
+    loss.backward()
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
