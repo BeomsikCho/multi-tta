@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 46, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 16, in train_step
+    params, _ = self.collect_params(model)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 75, in collect_params
+    adapt_layer = list(map(lambda x: getattr(nn, x), adapt_layer))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 75, in <lambda>
+    adapt_layer = list(map(lambda x: getattr(nn, x), adapt_layer))
+                                     ^^^^^^^^^^^^^^
+AttributeError: module 'torch.nn' has no attribute 'BatchNorm'. Did you mean: 'BatchNorm1d'?

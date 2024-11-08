@@ -1,0 +1,16 @@
+{"time":"2024-11-08T16:21:50.08684039+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T16:21:50.086861751+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_162150-ana6ex7p/logs/debug-core.log"}
+{"time":"2024-11-08T16:21:50.197173338+09:00","level":"INFO","msg":"created new stream","id":"ana6ex7p"}
+{"time":"2024-11-08T16:21:50.197248382+09:00","level":"INFO","msg":"stream: started","id":"ana6ex7p"}
+{"time":"2024-11-08T16:21:50.1973734+09:00","level":"INFO","msg":"sender: started","stream_id":"ana6ex7p"}
+{"time":"2024-11-08T16:21:50.197313245+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ana6ex7p"}}
+{"time":"2024-11-08T16:21:50.197415992+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ana6ex7p"}}
+{"time":"2024-11-08T16:21:50.543235271+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T16:21:51.213671177+09:00","level":"INFO","msg":"stream: closing","id":"ana6ex7p"}
+{"time":"2024-11-08T16:21:51.213702758+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T16:21:51.214815581+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T16:21:54.50438035+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T16:21:55.928434332+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ana6ex7p"}}
+{"time":"2024-11-08T16:21:55.928488425+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ana6ex7p"}}
+{"time":"2024-11-08T16:21:55.928524875+09:00","level":"INFO","msg":"sender: closed","stream_id":"ana6ex7p"}
+{"time":"2024-11-08T16:21:55.928565582+09:00","level":"INFO","msg":"stream: closed","id":"ana6ex7p"}

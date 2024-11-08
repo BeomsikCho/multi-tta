@@ -1,0 +1,1 @@
+{"columns": ["model_name", "dataloader_name", "top1_acc"], "data": [["ResNet50RobustBench", "imagenet-c/gaussian_noise/5", 0.00184], ["ResNet50RobustBench", "imagenet-c/shot_noise/5", 0.0027]]}

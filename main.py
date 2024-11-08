@@ -7,12 +7,12 @@ def initialization():
     setup_deterministic(seed=2024)
     cfgs = setup_cfgs()
     
-    wandb.login()
-    wandb.init(
-        project='multiTTA', # Never Revised
-        config=cfgs, # Frequentry Revised
-        tags=['tent-baseline', 'imagenet-c'] # Frequentry Revised
-    )
+    # wandb.login()
+    # wandb.init(
+    #     project='multiTTA', # Never Revised
+    #     config=cfgs, # Frequentry Revised
+    #     tags=['tent-baseline', 'imagenet-c'] # Frequentry Revised
+    # )
     return cfgs
 
 def main():
@@ -21,8 +21,7 @@ def main():
     if cfgs['mode'] == 'train' or cfgs['mode'] == 'all':
         trainer_cls = getattr(trainers, cfgs['trainer']['name'])
         trainer = trainer_cls(cfgs)
-        result = trainer.train()
-        wandb.log(result)
+        trainer.train()
 
     if cfgs['mode'] == 'eval' or cfgs['mode'] == 'all':
         # evaluator_cls = getattr(evaluators, cfgs['evaluator']['name'])

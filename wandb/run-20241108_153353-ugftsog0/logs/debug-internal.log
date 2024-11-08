@@ -1,0 +1,16 @@
+{"time":"2024-11-08T15:33:53.72083561+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T15:33:53.720857933+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_153353-ugftsog0/logs/debug-core.log"}
+{"time":"2024-11-08T15:33:53.830763539+09:00","level":"INFO","msg":"created new stream","id":"ugftsog0"}
+{"time":"2024-11-08T15:33:53.830807894+09:00","level":"INFO","msg":"stream: started","id":"ugftsog0"}
+{"time":"2024-11-08T15:33:53.83094738+09:00","level":"INFO","msg":"sender: started","stream_id":"ugftsog0"}
+{"time":"2024-11-08T15:33:53.831008156+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ugftsog0"}}
+{"time":"2024-11-08T15:33:53.830882787+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ugftsog0"}}
+{"time":"2024-11-08T15:33:54.430779865+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T15:35:49.412135532+09:00","level":"INFO","msg":"stream: closing","id":"ugftsog0"}
+{"time":"2024-11-08T15:35:49.412170218+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T15:35:49.413092098+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T15:35:52.300094305+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T15:35:52.544873661+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ugftsog0"}}
+{"time":"2024-11-08T15:35:52.544914919+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ugftsog0"}}
+{"time":"2024-11-08T15:35:52.544945227+09:00","level":"INFO","msg":"sender: closed","stream_id":"ugftsog0"}
+{"time":"2024-11-08T15:35:52.545002176+09:00","level":"INFO","msg":"stream: closed","id":"ugftsog0"}

@@ -1,0 +1,16 @@
+{"time":"2024-11-08T15:58:39.243279867+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T15:58:39.243303122+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_155839-hcc1hrba/logs/debug-core.log"}
+{"time":"2024-11-08T15:58:39.352725657+09:00","level":"INFO","msg":"created new stream","id":"hcc1hrba"}
+{"time":"2024-11-08T15:58:39.352781724+09:00","level":"INFO","msg":"stream: started","id":"hcc1hrba"}
+{"time":"2024-11-08T15:58:39.352865664+09:00","level":"INFO","msg":"sender: started","stream_id":"hcc1hrba"}
+{"time":"2024-11-08T15:58:39.352825137+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hcc1hrba"}}
+{"time":"2024-11-08T15:58:39.352938313+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hcc1hrba"}}
+{"time":"2024-11-08T15:58:39.639102652+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T16:01:16.631373205+09:00","level":"INFO","msg":"stream: closing","id":"hcc1hrba"}
+{"time":"2024-11-08T16:01:16.631414664+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T16:01:16.632291448+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T16:01:20.490508764+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T16:01:20.769037853+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hcc1hrba"}}
+{"time":"2024-11-08T16:01:20.769084121+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hcc1hrba"}}
+{"time":"2024-11-08T16:01:20.769103669+09:00","level":"INFO","msg":"sender: closed","stream_id":"hcc1hrba"}
+{"time":"2024-11-08T16:01:20.769168753+09:00","level":"INFO","msg":"stream: closed","id":"hcc1hrba"}

@@ -1,0 +1,27 @@
+/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+782it [01:52,  6.97it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 35, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    result = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 37, in train
+    wandb.log(result, dataloader.name)
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 451, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 403, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 393, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1920, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1634, in _log
+    raise ValueError("wandb.log must be passed a dictionary")
+ValueError: wandb.log must be passed a dictionary

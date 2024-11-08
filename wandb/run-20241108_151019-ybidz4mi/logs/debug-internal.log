@@ -1,0 +1,11 @@
+{"time":"2024-11-08T15:10:19.853553674+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T15:10:19.853576117+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_151019-ybidz4mi/logs/debug-core.log"}
+{"time":"2024-11-08T15:10:19.963128645+09:00","level":"INFO","msg":"created new stream","id":"ybidz4mi"}
+{"time":"2024-11-08T15:10:19.963201473+09:00","level":"INFO","msg":"stream: started","id":"ybidz4mi"}
+{"time":"2024-11-08T15:10:19.963370687+09:00","level":"INFO","msg":"sender: started","stream_id":"ybidz4mi"}
+{"time":"2024-11-08T15:10:19.963266548+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ybidz4mi"}}
+{"time":"2024-11-08T15:10:19.963326623+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ybidz4mi"}}
+{"time":"2024-11-08T15:10:20.290097964+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T15:11:05.014239876+09:00","level":"INFO","msg":"stream: closing","id":"ybidz4mi"}
+{"time":"2024-11-08T15:11:05.014286315+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T15:11:05.015168539+09:00","level":"INFO","msg":"Stopped system monitor"}

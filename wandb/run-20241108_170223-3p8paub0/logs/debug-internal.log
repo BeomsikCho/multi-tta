@@ -1,0 +1,11 @@
+{"time":"2024-11-08T17:02:23.792297538+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T17:02:23.79231975+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_170223-3p8paub0/logs/debug-core.log"}
+{"time":"2024-11-08T17:02:23.901734008+09:00","level":"INFO","msg":"created new stream","id":"3p8paub0"}
+{"time":"2024-11-08T17:02:23.901775817+09:00","level":"INFO","msg":"stream: started","id":"3p8paub0"}
+{"time":"2024-11-08T17:02:23.90189811+09:00","level":"INFO","msg":"sender: started","stream_id":"3p8paub0"}
+{"time":"2024-11-08T17:02:23.901853345+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3p8paub0"}}
+{"time":"2024-11-08T17:02:23.90194487+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3p8paub0"}}
+{"time":"2024-11-08T17:02:24.226951304+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T17:11:45.228871202+09:00","level":"INFO","msg":"stream: closing","id":"3p8paub0"}
+{"time":"2024-11-08T17:11:45.22891701+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T17:11:45.229750951+09:00","level":"INFO","msg":"Stopped system monitor"}

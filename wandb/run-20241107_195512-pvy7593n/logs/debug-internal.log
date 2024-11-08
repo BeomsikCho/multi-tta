@@ -1,8 +1,0 @@
-{"time":"2024-11-07T19:55:12.255949333+09:00","level":"INFO","msg":"using version","core version":"0.18.5"}
-{"time":"2024-11-07T19:55:12.255960614+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_195512-pvy7593n/logs/debug-core.log"}
-{"time":"2024-11-07T19:55:12.363099069+09:00","level":"INFO","msg":"created new stream","id":"pvy7593n"}
-{"time":"2024-11-07T19:55:12.363153553+09:00","level":"INFO","msg":"stream: started","id":"pvy7593n"}
-{"time":"2024-11-07T19:55:12.363281768+09:00","level":"INFO","msg":"sender: started","stream_id":"pvy7593n"}
-{"time":"2024-11-07T19:55:12.363270085+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"pvy7593n"}}
-{"time":"2024-11-07T19:55:12.363231822+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"pvy7593n"}}
-{"time":"2024-11-07T19:55:12.64832355+09:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,8 +1,0 @@
-{"time":"2024-11-07T19:55:34.418217557+09:00","level":"INFO","msg":"using version","core version":"0.18.5"}
-{"time":"2024-11-07T19:55:34.41823005+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241107_195534-5n7x6omp/logs/debug-core.log"}
-{"time":"2024-11-07T19:55:34.524169837+09:00","level":"INFO","msg":"created new stream","id":"5n7x6omp"}
-{"time":"2024-11-07T19:55:34.524214372+09:00","level":"INFO","msg":"stream: started","id":"5n7x6omp"}
-{"time":"2024-11-07T19:55:34.524352846+09:00","level":"INFO","msg":"sender: started","stream_id":"5n7x6omp"}
-{"time":"2024-11-07T19:55:34.524275669+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"5n7x6omp"}}
-{"time":"2024-11-07T19:55:34.524302751+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"5n7x6omp"}}
-{"time":"2024-11-07T19:55:34.86244193+09:00","level":"INFO","msg":"Starting system monitor"}

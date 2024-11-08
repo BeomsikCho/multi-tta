@@ -1,0 +1,17 @@
+{"time":"2024-11-08T16:22:16.849833903+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T16:22:16.84985843+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_162214-tn636l2p/logs/debug-core.log"}
+{"time":"2024-11-08T16:22:16.961549149+09:00","level":"INFO","msg":"created new stream","id":"tn636l2p"}
+{"time":"2024-11-08T16:22:16.961609485+09:00","level":"INFO","msg":"stream: started","id":"tn636l2p"}
+{"time":"2024-11-08T16:22:16.961678005+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tn636l2p"}}
+{"time":"2024-11-08T16:22:16.961742148+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tn636l2p"}}
+{"time":"2024-11-08T16:22:16.961940366+09:00","level":"INFO","msg":"sender: started","stream_id":"tn636l2p"}
+{"time":"2024-11-08T16:22:17.400867742+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T16:24:54.895435541+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T16:24:54.897394159+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T16:24:55.895924551+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-tn636l2p-domain_accuracy_table","runtime_seconds":0.596857274},{"desc":"uploading wandb-summary.json","runtime_seconds":0.353253138,"progress":"834B/834B"},{"desc":"uploading output.log","runtime_seconds":0.125025139,"progress":"2.2KB/2.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.125006742,"progress":"1.9KB/1.9KB"}],"total_operations":4}}
+{"time":"2024-11-08T16:24:59.830993003+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T16:25:01.097536696+09:00","level":"INFO","msg":"stream: closing","id":"tn636l2p"}
+{"time":"2024-11-08T16:25:01.097562996+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tn636l2p"}}
+{"time":"2024-11-08T16:25:01.097593704+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tn636l2p"}}
+{"time":"2024-11-08T16:25:01.097641345+09:00","level":"INFO","msg":"sender: closed","stream_id":"tn636l2p"}
+{"time":"2024-11-08T16:25:01.097691741+09:00","level":"INFO","msg":"stream: closed","id":"tn636l2p"}
