@@ -2,49 +2,55 @@ import torch.nn as nn
 from torch.optim.optimizer import Optimizer
 import re
 import wandb
+from tqdm import tqdm
 
 from .base_trainer import BaseTrainer
-from utils import Builder
-from utils import softmax_entropy
+from utils.builder import Builder
+from utils.metric import softmax_entropy
+from utils.common import device_seperation
+
 
 class TentTrainer(BaseTrainer):
-    def train_step(self, model, device, processor, dataloader, optimizer):
-        model = self.configure_model(model, device)
-        params, param_names = self.collect_params(model)
+    name = 'TentTrainer'
+
+    def train_step(self, model, dataloader, optimizer):
+        first_device, _ = device_seperation(self.device)
+        
+        model = self.configure_model(model, first_device)
+        params, _ = self.collect_params(model)
         optimizer = self.adapt_optimizer(params, optimizer)
 
         train_loss = 0
-        correct = 0
-        total_sample = 0
-        for iteration, (samples, target, domain_id) in enumerate(dataloader):
-            samples = processor(samples)
-            pred = model(samples['pixel_values'])
-            loss = softmax_entropy(pred)
+        total_sample = 0 
+        
+        optimizer.zero_grad()
+        for (samples, target, domain_id) in tqdm(dataloader):
+            samples, target = samples.to(first_device), target.to(first_device)
+            
+            pred = model(samples)
+            loss = softmax_entropy(pred['logits']).mean(0)
             loss.backward()
-
+            
             optimizer.step()
+            optimizer.zero_grad() 
 
             train_loss += loss.item()
-            correct += (pred.argmax(dim=1) == target).sum().item()
-            total_sample += target.size(0)
-
+            num_sample = target.shape[0]
+            total_sample += num_sample
             wandb.log({
-                "step_train_loss": loss.item(), # 현재 loss
-                "cumulative_train_loss": train_loss / (iteration + 1) # loss의 평균
+                "step_train_loss": loss.item() / num_sample,
+                "cumulative_train_loss": train_loss / total_sample
             })
-        accuracy = correct / total_sample
-        wandb.log({
-            "train_loss": train_loss / len(dataloader),  # 평균 훈련 손실
-            "accuracy": accuracy  # 평균 정확도
-        })
+
         return model
 
-
     @staticmethod
-    def configure_model(model, device: str, adapt_layers):
+    def configure_model(model,
+                        device: str,
+                        adapt_layers = ['BatchNorm2d', 'GroupNorm', 'LayerNorm']):
         model.train()
         model = model.to(device)
-
+        
         if adapt_layers != None: return model
 
         model.requires_grad_(False)
@@ -65,11 +71,14 @@ class TentTrainer(BaseTrainer):
         return model
 
     @staticmethod
-    def collect_params(model):
+    def collect_params(model,
+                       adapt_layer = ['BatchNorm2d', 'GroupNorm', 'LayerNorm']):
+        adapt_layer = tuple(map(lambda x: getattr(nn, x), adapt_layer))
+
         params = []
         names = []
         for nm, m in model.named_modules():
-            if isinstance(m, (nn.BatchNorm2d, nn.GroupNorm, nn.LayerNorm)):
+            if isinstance(m, adapt_layer):
                 for np, p in m.named_parameters():
                     if np in ['weight', 'bias']:  # weight is scale, bias is shift
                         params.append(p)
@@ -85,6 +94,4 @@ class TentTrainer(BaseTrainer):
         return optimizer(params, **name_removed_optim_cfgs)
     
 
-    def validate_step(self, model, dataloader) -> dict:
-        pass
 

@@ -1,0 +1,16 @@
+{"time":"2024-11-11T22:50:04.983043088+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:50:04.98306513+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_225004-hi2sxfco/logs/debug-core.log"}
+{"time":"2024-11-11T22:50:05.093119563+09:00","level":"INFO","msg":"created new stream","id":"hi2sxfco"}
+{"time":"2024-11-11T22:50:05.093174689+09:00","level":"INFO","msg":"stream: started","id":"hi2sxfco"}
+{"time":"2024-11-11T22:50:05.093302893+09:00","level":"INFO","msg":"sender: started","stream_id":"hi2sxfco"}
+{"time":"2024-11-11T22:50:05.093246265+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hi2sxfco"}}
+{"time":"2024-11-11T22:50:05.093353971+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hi2sxfco"}}
+{"time":"2024-11-11T22:50:05.42583182+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T22:50:08.583045604+09:00","level":"INFO","msg":"stream: closing","id":"hi2sxfco"}
+{"time":"2024-11-11T22:50:08.583092924+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T22:50:08.58394463+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T22:50:09.559168605+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-11T22:50:09.809051823+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hi2sxfco"}}
+{"time":"2024-11-11T22:50:09.809113231+09:00","level":"INFO","msg":"sender: closed","stream_id":"hi2sxfco"}
+{"time":"2024-11-11T22:50:09.809097811+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hi2sxfco"}}
+{"time":"2024-11-11T22:50:09.80918635+09:00","level":"INFO","msg":"stream: closed","id":"hi2sxfco"}

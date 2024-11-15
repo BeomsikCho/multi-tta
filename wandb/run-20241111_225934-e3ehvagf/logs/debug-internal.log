@@ -1,0 +1,12 @@
+{"time":"2024-11-11T22:59:34.912861394+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:59:34.912884297+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_225934-e3ehvagf/logs/debug-core.log"}
+{"time":"2024-11-11T22:59:35.023385654+09:00","level":"INFO","msg":"created new stream","id":"e3ehvagf"}
+{"time":"2024-11-11T22:59:35.023443304+09:00","level":"INFO","msg":"stream: started","id":"e3ehvagf"}
+{"time":"2024-11-11T22:59:35.023576729+09:00","level":"INFO","msg":"sender: started","stream_id":"e3ehvagf"}
+{"time":"2024-11-11T22:59:35.023529058+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"e3ehvagf"}}
+{"time":"2024-11-11T22:59:35.023625923+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"e3ehvagf"}}
+{"time":"2024-11-11T22:59:35.450437319+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T22:59:39.727290752+09:00","level":"INFO","msg":"stream: closing","id":"e3ehvagf"}
+{"time":"2024-11-11T22:59:39.72734242+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T22:59:39.728145473+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T22:59:40.778182456+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -1,0 +1,16 @@
+{"time":"2024-11-08T20:41:43.258062927+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T20:41:43.258276644+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_204143-hfwa80y6/logs/debug-core.log"}
+{"time":"2024-11-08T20:41:43.367044249+09:00","level":"INFO","msg":"created new stream","id":"hfwa80y6"}
+{"time":"2024-11-08T20:41:43.367085227+09:00","level":"INFO","msg":"stream: started","id":"hfwa80y6"}
+{"time":"2024-11-08T20:41:43.367242387+09:00","level":"INFO","msg":"sender: started","stream_id":"hfwa80y6"}
+{"time":"2024-11-08T20:41:43.367193825+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hfwa80y6"}}
+{"time":"2024-11-08T20:41:43.36715458+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hfwa80y6"}}
+{"time":"2024-11-08T20:41:43.687421716+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T20:41:54.429757727+09:00","level":"INFO","msg":"stream: closing","id":"hfwa80y6"}
+{"time":"2024-11-08T20:41:54.429799757+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T20:41:54.430764538+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T20:41:56.73551794+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T20:41:57.013713781+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"hfwa80y6"}}
+{"time":"2024-11-08T20:41:57.013760149+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"hfwa80y6"}}
+{"time":"2024-11-08T20:41:57.013859158+09:00","level":"INFO","msg":"sender: closed","stream_id":"hfwa80y6"}
+{"time":"2024-11-08T20:41:57.013874838+09:00","level":"INFO","msg":"stream: closed","id":"hfwa80y6"}

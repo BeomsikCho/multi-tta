@@ -1,0 +1,16 @@
+{"time":"2024-11-08T16:21:41.538450704+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T16:21:41.538472235+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_162141-vamxrwf2/logs/debug-core.log"}
+{"time":"2024-11-08T16:21:41.647837968+09:00","level":"INFO","msg":"created new stream","id":"vamxrwf2"}
+{"time":"2024-11-08T16:21:41.647906038+09:00","level":"INFO","msg":"stream: started","id":"vamxrwf2"}
+{"time":"2024-11-08T16:21:41.648000247+09:00","level":"INFO","msg":"sender: started","stream_id":"vamxrwf2"}
+{"time":"2024-11-08T16:21:41.647957997+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"vamxrwf2"}}
+{"time":"2024-11-08T16:21:41.648088345+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"vamxrwf2"}}
+{"time":"2024-11-08T16:21:42.034354648+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T16:21:42.814837826+09:00","level":"INFO","msg":"stream: closing","id":"vamxrwf2"}
+{"time":"2024-11-08T16:21:42.814904644+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T16:21:42.816064548+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T16:21:44.456731142+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T16:21:44.84669957+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"vamxrwf2"}}
+{"time":"2024-11-08T16:21:44.846734507+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"vamxrwf2"}}
+{"time":"2024-11-08T16:21:44.846750839+09:00","level":"INFO","msg":"sender: closed","stream_id":"vamxrwf2"}
+{"time":"2024-11-08T16:21:44.84680905+09:00","level":"INFO","msg":"stream: closed","id":"vamxrwf2"}

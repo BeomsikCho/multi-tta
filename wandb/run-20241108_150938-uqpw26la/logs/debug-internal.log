@@ -1,0 +1,16 @@
+{"time":"2024-11-08T15:09:38.995942426+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T15:09:38.99596536+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_150938-uqpw26la/logs/debug-core.log"}
+{"time":"2024-11-08T15:09:39.104931819+09:00","level":"INFO","msg":"created new stream","id":"uqpw26la"}
+{"time":"2024-11-08T15:09:39.104993757+09:00","level":"INFO","msg":"stream: started","id":"uqpw26la"}
+{"time":"2024-11-08T15:09:39.105105631+09:00","level":"INFO","msg":"sender: started","stream_id":"uqpw26la"}
+{"time":"2024-11-08T15:09:39.105067388+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"uqpw26la"}}
+{"time":"2024-11-08T15:09:39.10518351+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"uqpw26la"}}
+{"time":"2024-11-08T15:09:40.335444174+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T15:09:43.893931398+09:00","level":"INFO","msg":"stream: closing","id":"uqpw26la"}
+{"time":"2024-11-08T15:09:43.89396409+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T15:09:43.894768636+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T15:09:45.123960471+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T15:09:45.376437292+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"uqpw26la"}}
+{"time":"2024-11-08T15:09:45.376527274+09:00","level":"INFO","msg":"sender: closed","stream_id":"uqpw26la"}
+{"time":"2024-11-08T15:09:45.376517405+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"uqpw26la"}}
+{"time":"2024-11-08T15:09:45.376665117+09:00","level":"INFO","msg":"stream: closed","id":"uqpw26la"}

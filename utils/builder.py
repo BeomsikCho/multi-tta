@@ -2,61 +2,77 @@ from typing import Optional
 import transformers
 from torch.utils.data import DataLoader
 
+import inspect
+
+import torch 
+
+from torch import optim
 import datasets
 import trainers
+import models
+
+from utils.common import device_seperation
 
 class Builder(object):
     def __init__(self, cfgs: Optional[dict] = None):
         if cfgs:
             self.cfgs = cfgs
 
-    def build_model(self, model: Optional[str], pretrained: bool = True):
+    def build_model(self,
+                    model: Optional[str] = None,
+                    **model_cfgs):
         if model == None:
-            model = self.cfgs['model']
+            model_name = self.cfgs['model']['name']
+        elif not model_cfgs:
+            model_cfgs = self.cfgs['model']
 
-        if model == 'resnet-50':
-            if pretrained:
-                model= transformers.ResNetModel.from_pretrained('microsoft/resnet-50') # input should 
-                processor = transformers.AutoImageProcessor.from_pretrained('microsoft/resnet-50')
-            else:
-                model= transformers.ResNetModel(config='microsoft/resnet-50')
-                processor = transformers.AutoImageProcessor(config='microsoft/resnet-50')
+        if model_name == 'resnet50':
+            model = models.ResNet50RobustBench()
+        elif model_name == 'resnet50-gn':
+            model = models.ResNet50GN()
+        elif model_name == 'vit-base':
+            model = models.ViTBase16()
+        
+        first_device, device_ids = device_seperation(self.cfgs['device'])
 
-        elif model == 'vit-base':
-            if pretrained:
-                model= transformers.ResNetModel.from_pretrained('google/vit-base-patch16-224-in21k') # input should 
-                processor = transformers.AutoImageProcessor.from_pretrained('google/vit-base-patch16-224-in21k')
-            else:
-                model= transformers.ResNetModel(config='google/vit-base-patch16-224-in21k')
-                processor = transformers.AutoImageProcessor(config='google/vit-base-patch16-224-in21k')
-
-        return model, processor
+        if len(device_ids) > 1:
+            model = torch.nn.DataParallel(model, device_ids=device_ids)
+        model.to(first_device)
+        return model
 
     def build_dataloaders(self,
-                          dataset: Optional[str],
+                          dataset: Optional[str] = None,
                           **dataset_cfgs):
         if dataset == None:
             dataset = self.cfgs['dataset']['name']
-        if dataset_cfgs == None:
-            dataset_cfgs = dataset['dataset']
+        if not dataset_cfgs:
+            dataset_cfgs = self.cfgs['dataset']
         
-        dataset_class = getattr(datasets, dataset)
-        for dataset in dataset_class.build(**dataset_cfgs):
+        dataset_cls = getattr(datasets, dataset)
+        for dataset in dataset_cls.build(**dataset_cfgs):
             dataloader = DataLoader(dataset = dataset,
                                     batch_size = dataset_cfgs['batch_size'],
                                     shuffle = dataset_cfgs['shuffle'],
                                     num_workers = dataset_cfgs['num_workers'])
-        dataloader.name = dataset.name
-        yield dataloader
+            dataloader.name = dataset.name
+            yield dataloader
         
-    def build_optimizer(self, optimizer: Optional[str]):
-        pass
+    def build_optimizer(self,
+                        optimizer: Optional[str] = None,
+                        **optimizer_cfgs):
+        if not optimizer:
+            optimizer = self.cfgs['optimizer']['name']
+        if not optimizer_cfgs:
+            optimizer_cfgs = self.cfgs['optimizer']
+
+        optimizer_cls = getattr(optim, optimizer)
+        return optimizer_cls
 
 
 if __name__ == "__main__":
     # Test the operation of Builder class
     builder = Builder()
-    model, processor = builder.build_model('resnet-50')
+    model = builder.build_model('resnet-50')
     breakpoint()
     
 

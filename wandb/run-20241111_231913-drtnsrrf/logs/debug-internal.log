@@ -1,0 +1,11 @@
+{"time":"2024-11-11T23:19:13.271631395+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T23:19:13.271651704+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_231913-drtnsrrf/logs/debug-core.log"}
+{"time":"2024-11-11T23:19:13.381192209+09:00","level":"INFO","msg":"created new stream","id":"drtnsrrf"}
+{"time":"2024-11-11T23:19:13.38125012+09:00","level":"INFO","msg":"stream: started","id":"drtnsrrf"}
+{"time":"2024-11-11T23:19:13.381406649+09:00","level":"INFO","msg":"sender: started","stream_id":"drtnsrrf"}
+{"time":"2024-11-11T23:19:13.381314883+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"drtnsrrf"}}
+{"time":"2024-11-11T23:19:13.381368396+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"drtnsrrf"}}
+{"time":"2024-11-11T23:19:13.870930756+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T23:28:11.914508142+09:00","level":"INFO","msg":"stream: closing","id":"drtnsrrf"}
+{"time":"2024-11-11T23:28:11.914541215+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T23:28:11.915547115+09:00","level":"INFO","msg":"Stopped system monitor"}

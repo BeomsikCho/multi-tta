@@ -1,0 +1,17 @@
+{"time":"2024-11-08T16:22:13.428224169+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T16:22:13.428246662+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_162213-u39nfcsl/logs/debug-core.log"}
+{"time":"2024-11-08T16:22:13.538272254+09:00","level":"INFO","msg":"created new stream","id":"u39nfcsl"}
+{"time":"2024-11-08T16:22:13.53832776+09:00","level":"INFO","msg":"stream: started","id":"u39nfcsl"}
+{"time":"2024-11-08T16:22:13.538394928+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"u39nfcsl"}}
+{"time":"2024-11-08T16:22:13.538501762+09:00","level":"INFO","msg":"sender: started","stream_id":"u39nfcsl"}
+{"time":"2024-11-08T16:22:13.538443551+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"u39nfcsl"}}
+{"time":"2024-11-08T16:22:13.842151122+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T16:22:14.476925328+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T16:22:14.478218186+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T16:22:15.477662919+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.792766962}],"total_operations":1}}
+{"time":"2024-11-08T16:22:15.534689513+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T16:22:16.806557019+09:00","level":"INFO","msg":"stream: closing","id":"u39nfcsl"}
+{"time":"2024-11-08T16:22:16.806580935+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"u39nfcsl"}}
+{"time":"2024-11-08T16:22:16.806602326+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"u39nfcsl"}}
+{"time":"2024-11-08T16:22:16.806621372+09:00","level":"INFO","msg":"sender: closed","stream_id":"u39nfcsl"}
+{"time":"2024-11-08T16:22:16.806671127+09:00","level":"INFO","msg":"stream: closed","id":"u39nfcsl"}

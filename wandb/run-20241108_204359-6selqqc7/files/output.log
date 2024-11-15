@@ -1,0 +1,13 @@
+ 50%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                          | 389/782 [01:05<01:06,  5.90it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 47, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 37, in train_step
+    train_loss += loss.item()
+                  ^^^^^^^^^^^
+KeyboardInterrupt

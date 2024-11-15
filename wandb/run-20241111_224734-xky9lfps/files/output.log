@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 41, in train
+    for dataloader in self.builder.build_dataloaders():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/utils/builder.py", line 53, in build_dataloaders
+    dataloader = DataLoader(dataset = dataset,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 254, in __init__
+    if num_workers < 0:
+       ^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'int'

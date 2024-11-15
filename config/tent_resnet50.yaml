@@ -1,0 +1,19 @@
+model:
+  name: resnet50 # [resnet50, resnet50-gn, vit-base]
+
+dataset:
+  name: ImageNetAll
+  path: ./data/
+
+  batch_size: 128
+  num_workers: 12
+  shuffle: True
+
+optimizer:
+  name: SGD
+  lr: 0.00025
+  weight_decay: 0.01
+  momentum: 0.9
+
+trainer:
+  name: TentTrainer

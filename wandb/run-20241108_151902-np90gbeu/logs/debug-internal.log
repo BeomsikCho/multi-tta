@@ -1,0 +1,16 @@
+{"time":"2024-11-08T15:19:02.014676293+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T15:19:02.014697714+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_151902-np90gbeu/logs/debug-core.log"}
+{"time":"2024-11-08T15:19:02.123951572+09:00","level":"INFO","msg":"created new stream","id":"np90gbeu"}
+{"time":"2024-11-08T15:19:02.123985116+09:00","level":"INFO","msg":"stream: started","id":"np90gbeu"}
+{"time":"2024-11-08T15:19:02.124072553+09:00","level":"INFO","msg":"sender: started","stream_id":"np90gbeu"}
+{"time":"2024-11-08T15:19:02.124025884+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"np90gbeu"}}
+{"time":"2024-11-08T15:19:02.124119373+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"np90gbeu"}}
+{"time":"2024-11-08T15:19:02.597740003+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T15:20:56.873514335+09:00","level":"INFO","msg":"stream: closing","id":"np90gbeu"}
+{"time":"2024-11-08T15:20:56.873565833+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T15:20:56.874619994+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T15:21:01.661201795+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T15:21:01.905868645+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"np90gbeu"}}
+{"time":"2024-11-08T15:21:01.905918921+09:00","level":"INFO","msg":"sender: closed","stream_id":"np90gbeu"}
+{"time":"2024-11-08T15:21:01.90590818+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"np90gbeu"}}
+{"time":"2024-11-08T15:21:01.905988343+09:00","level":"INFO","msg":"stream: closed","id":"np90gbeu"}

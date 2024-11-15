@@ -1,0 +1,46 @@
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Current SDK version is 0.18.6
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Configure stats pid to 2591316
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from /home/bscho/.config/wandb/settings
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from /home/bscho/works/multi-tta/wandb/settings
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': '/home/bscho/works/multi-tta/main.py', 'program': '/home/bscho/works/multi-tta/main.py'}
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:_log_setup():533] Logging user logs to /home/bscho/works/multi-tta/wandb/run-20241108_162213-u39nfcsl/logs/debug.log
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:_log_setup():534] Logging internal logs to /home/bscho/works/multi-tta/wandb/run-20241108_162213-u39nfcsl/logs/debug-internal.log
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:init():619] calling init triggers
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {'model': {'name': 'resnet50'}, 'dataset': {'name': 'ImageNetC', 'path': './data/', 'corruptions': ['gaussian_noise', 'shot_noise', 'impulse_noise', 'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur', 'snow', 'frost', 'fog', 'brightness', 'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression'], 'levels': [5], 'batch_size': 64, 'num_workers': 4, 'shuffle': True}, 'optimizer': {'name': 'SGD', 'lr': 0.00025, 'weight_decay': 0.01, 'momentum': 0.9}, 'trainer': {'name': 'TentTrainer', 'device': 0}, 'config': 'config/tent.yaml', 'mode': 'train'}
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:init():669] starting backend
+2024-11-08 16:22:13,424 INFO    MainThread:2591316 [wandb_init.py:init():673] sending inform_init request
+2024-11-08 16:22:13,425 INFO    MainThread:2591316 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-11-08 16:22:13,425 INFO    MainThread:2591316 [wandb_init.py:init():686] backend started and connected
+2024-11-08 16:22:13,426 INFO    MainThread:2591316 [wandb_init.py:init():781] updated telemetry
+2024-11-08 16:22:13,431 INFO    MainThread:2591316 [wandb_init.py:init():814] communicating run to backend with 90.0 second timeout
+2024-11-08 16:22:13,839 INFO    MainThread:2591316 [wandb_init.py:init():867] starting run threads in backend
+2024-11-08 16:22:13,877 INFO    MainThread:2591316 [wandb_run.py:_console_start():2451] atexit reg
+2024-11-08 16:22:13,877 INFO    MainThread:2591316 [wandb_run.py:_redirect():2299] redirect: wrap_raw
+2024-11-08 16:22:13,877 INFO    MainThread:2591316 [wandb_run.py:_redirect():2364] Wrapping output streams.
+2024-11-08 16:22:13,877 INFO    MainThread:2591316 [wandb_run.py:_redirect():2389] Redirects installed.
+2024-11-08 16:22:13,880 INFO    MainThread:2591316 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-08 16:22:14,474 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Current SDK version is 0.18.6
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Configure stats pid to 2591316
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from /home/bscho/.config/wandb/settings
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from /home/bscho/works/multi-tta/wandb/settings
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': '/home/bscho/works/multi-tta/main.py', 'program': '/home/bscho/works/multi-tta/main.py'}
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_init.py:_log_setup():533] Logging user logs to /home/bscho/works/multi-tta/wandb/run-20241108_162214-tn636l2p/logs/debug.log
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_init.py:_log_setup():534] Logging internal logs to /home/bscho/works/multi-tta/wandb/run-20241108_162214-tn636l2p/logs/debug-internal.log
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_init.py:init():619] calling init triggers
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {}
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_init.py:init():644] re-initializing run, found existing run on stack: u39nfcsl
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_run.py:_finish():2146] finishing run mlmlab/TentTrainer/u39nfcsl
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_run.py:_atexit_cleanup():2414] got exitcode: 0
+2024-11-08 16:22:14,475 INFO    MainThread:2591316 [wandb_run.py:_restore():2396] restore
+2024-11-08 16:22:14,476 INFO    MainThread:2591316 [wandb_run.py:_restore():2402] restore done
+2024-11-08 16:22:16,797 INFO    MainThread:2591316 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2024-11-08 16:22:16,798 INFO    MainThread:2591316 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2024-11-08 16:22:16,805 INFO    MainThread:2591316 [wandb_run.py:_footer_sync_info():3922] logging synced files

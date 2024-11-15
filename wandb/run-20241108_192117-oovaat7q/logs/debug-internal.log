@@ -1,0 +1,22 @@
+{"time":"2024-11-08T19:21:17.159963395+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T19:21:17.159985287+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_192117-oovaat7q/logs/debug-core.log"}
+{"time":"2024-11-08T19:21:17.26915228+09:00","level":"INFO","msg":"created new stream","id":"oovaat7q"}
+{"time":"2024-11-08T19:21:17.26919954+09:00","level":"INFO","msg":"stream: started","id":"oovaat7q"}
+{"time":"2024-11-08T19:21:17.2693094+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"oovaat7q"}}
+{"time":"2024-11-08T19:21:17.269268822+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"oovaat7q"}}
+{"time":"2024-11-08T19:21:17.269402918+09:00","level":"INFO","msg":"sender: started","stream_id":"oovaat7q"}
+{"time":"2024-11-08T19:21:18.325718682+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T19:25:09.204743125+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/mlmlab/multiTTA/oovaat7q/file_stream"}
+{"time":"2024-11-08T19:25:16.690709866+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/mlmlab/multiTTA/oovaat7q/file_stream"}
+{"time":"2024-11-08T19:25:33.382500041+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-11-08T19:26:02.769266618+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/mlmlab/multiTTA/oovaat7q/file_stream"}
+{"time":"2024-11-08T19:26:05.791939062+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-11-08T19:26:17.472583575+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/mlmlab/multiTTA/oovaat7q/file_stream"}
+{"time":"2024-11-08T19:59:45.250883477+09:00","level":"INFO","msg":"stream: closing","id":"oovaat7q"}
+{"time":"2024-11-08T19:59:45.250925407+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T19:59:45.251929984+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T19:59:46.674329396+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T19:59:47.054738106+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"oovaat7q"}}
+{"time":"2024-11-08T19:59:47.054786549+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"oovaat7q"}}
+{"time":"2024-11-08T19:59:47.054799954+09:00","level":"INFO","msg":"sender: closed","stream_id":"oovaat7q"}
+{"time":"2024-11-08T19:59:47.054908271+09:00","level":"INFO","msg":"stream: closed","id":"oovaat7q"}

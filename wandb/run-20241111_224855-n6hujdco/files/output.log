@@ -1,0 +1,39 @@
+> /home/bscho/works/multi-tta/utils/builder.py(54)build_dataloaders()
+-> dataloader = DataLoader(dataset = dataset,
+Dataset ImageNetSketch
+    Number of datapoints: 38023
+    Root location: data/imagenet-sketch
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+> /home/bscho/works/multi-tta/utils/builder.py(55)build_dataloaders()
+-> batch_size = dataset_cfgs['batch_size'],
+> /home/bscho/works/multi-tta/utils/builder.py(56)build_dataloaders()
+-> shuffle = dataset_cfgs['shuffle'],
+> /home/bscho/works/multi-tta/utils/builder.py(57)build_dataloaders()
+-> num_workers = dataset_cfgs['num_workers'])
+> /home/bscho/works/multi-tta/utils/builder.py(54)build_dataloaders()
+-> dataloader = DataLoader(dataset = dataset,
+TypeError: '<' not supported between instances of 'NoneType' and 'int'
+> /home/bscho/works/multi-tta/utils/builder.py(54)build_dataloaders()
+-> dataloader = DataLoader(dataset = dataset,
+256
+True
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 41, in train
+    for dataloader in self.builder.build_dataloaders():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 96, in trace_dispatch
+    return self.dispatch_exception(frame, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 181, in dispatch_exception
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

@@ -1,2 +1,6 @@
 wandb
 transformers
+timm
+pandas
+seaborn
+plotly

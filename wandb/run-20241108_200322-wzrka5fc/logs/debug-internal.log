@@ -1,0 +1,16 @@
+{"time":"2024-11-08T20:03:22.064205397+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T20:03:22.064227219+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_200322-wzrka5fc/logs/debug-core.log"}
+{"time":"2024-11-08T20:03:22.17359047+09:00","level":"INFO","msg":"created new stream","id":"wzrka5fc"}
+{"time":"2024-11-08T20:03:22.173646357+09:00","level":"INFO","msg":"stream: started","id":"wzrka5fc"}
+{"time":"2024-11-08T20:03:22.17380509+09:00","level":"INFO","msg":"sender: started","stream_id":"wzrka5fc"}
+{"time":"2024-11-08T20:03:22.173748622+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"wzrka5fc"}}
+{"time":"2024-11-08T20:03:22.173717853+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"wzrka5fc"}}
+{"time":"2024-11-08T20:03:22.506259995+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T20:05:57.716349011+09:00","level":"INFO","msg":"stream: closing","id":"wzrka5fc"}
+{"time":"2024-11-08T20:05:57.716376614+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T20:05:57.717325014+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-08T20:06:01.188429661+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-08T20:06:01.752020734+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"wzrka5fc"}}
+{"time":"2024-11-08T20:06:01.752071571+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"wzrka5fc"}}
+{"time":"2024-11-08T20:06:01.752098202+09:00","level":"INFO","msg":"sender: closed","stream_id":"wzrka5fc"}
+{"time":"2024-11-08T20:06:01.752185719+09:00","level":"INFO","msg":"stream: closed","id":"wzrka5fc"}

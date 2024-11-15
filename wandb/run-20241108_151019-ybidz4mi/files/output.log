@@ -1,0 +1,65 @@
+/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 35, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    result = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 27, in train
+    model = self.train_step(model, dataloader, optimizer)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/tent_trainer.py", line 21, in train_step
+    samples, target = samples.to(self.device), target.to(self.device)
+           ^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/models/baseline.py", line 27, in forward
+    pred['last_hidden_state'] = self.encoder(samples)
+                                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torchvision/models/resnet.py", line 148, in forward
+    out = self.relu(out)
+          ^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/activation.py", line 133, in forward
+    return F.relu(input, inplace=self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/functional.py", line 1702, in relu
+    result = torch.relu_(input)
+             ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

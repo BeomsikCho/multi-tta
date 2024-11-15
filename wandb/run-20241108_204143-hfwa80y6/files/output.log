@@ -1,0 +1,26 @@
+> /home/bscho/works/multi-tta/utils/common.py(42)device_seperation()
+-> return first_device, device_ids
+device(type='cuda', index=0)
+'cuda:0,1,2,3'
+[0, 1, 2, 3]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 41, in train
+    model = self.builder.build_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/utils/builder.py", line 36, in build_model
+    first_device, device_ids = device_seperation(self.cfgs['device'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/utils/common.py", line 42, in device_seperation
+    return first_device, device_ids
+           ^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

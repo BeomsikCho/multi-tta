@@ -1,0 +1,11 @@
+{"time":"2024-11-08T20:42:47.394377188+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-08T20:42:47.394399451+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241108_204247-3ysxhnoh/logs/debug-core.log"}
+{"time":"2024-11-08T20:42:47.503783432+09:00","level":"INFO","msg":"created new stream","id":"3ysxhnoh"}
+{"time":"2024-11-08T20:42:47.503847695+09:00","level":"INFO","msg":"stream: started","id":"3ysxhnoh"}
+{"time":"2024-11-08T20:42:47.503954288+09:00","level":"INFO","msg":"sender: started","stream_id":"3ysxhnoh"}
+{"time":"2024-11-08T20:42:47.503909002+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3ysxhnoh"}}
+{"time":"2024-11-08T20:42:47.504005486+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3ysxhnoh"}}
+{"time":"2024-11-08T20:42:47.83380316+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-08T20:43:52.211029157+09:00","level":"INFO","msg":"stream: closing","id":"3ysxhnoh"}
+{"time":"2024-11-08T20:43:52.211078501+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-08T20:43:52.211973339+09:00","level":"INFO","msg":"Stopped system monitor"}
