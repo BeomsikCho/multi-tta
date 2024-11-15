@@ -1,0 +1,16 @@
+{"time":"2024-11-11T22:10:48.14318621+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:10:48.143198253+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_221048-dziolf06/logs/debug-core.log"}
+{"time":"2024-11-11T22:10:48.252372989+09:00","level":"INFO","msg":"created new stream","id":"dziolf06"}
+{"time":"2024-11-11T22:10:48.252428605+09:00","level":"INFO","msg":"stream: started","id":"dziolf06"}
+{"time":"2024-11-11T22:10:48.252528496+09:00","level":"INFO","msg":"sender: started","stream_id":"dziolf06"}
+{"time":"2024-11-11T22:10:48.252477639+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dziolf06"}}
+{"time":"2024-11-11T22:10:48.252579804+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dziolf06"}}
+{"time":"2024-11-11T22:10:48.598458118+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T22:10:54.327012904+09:00","level":"INFO","msg":"stream: closing","id":"dziolf06"}
+{"time":"2024-11-11T22:10:54.327055385+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T22:10:54.327878706+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T22:10:56.216176955+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-11T22:10:56.454476818+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"dziolf06"}}
+{"time":"2024-11-11T22:10:56.45453046+09:00","level":"INFO","msg":"sender: closed","stream_id":"dziolf06"}
+{"time":"2024-11-11T22:10:56.454517045+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"dziolf06"}}
+{"time":"2024-11-11T22:10:56.454627576+09:00","level":"INFO","msg":"stream: closed","id":"dziolf06"}

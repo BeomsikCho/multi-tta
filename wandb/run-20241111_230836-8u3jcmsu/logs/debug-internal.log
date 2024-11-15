@@ -1,0 +1,16 @@
+{"time":"2024-11-11T23:08:36.884645445+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T23:08:36.884668539+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_230836-8u3jcmsu/logs/debug-core.log"}
+{"time":"2024-11-11T23:08:36.994537101+09:00","level":"INFO","msg":"created new stream","id":"8u3jcmsu"}
+{"time":"2024-11-11T23:08:36.994592357+09:00","level":"INFO","msg":"stream: started","id":"8u3jcmsu"}
+{"time":"2024-11-11T23:08:36.99473544+09:00","level":"INFO","msg":"sender: started","stream_id":"8u3jcmsu"}
+{"time":"2024-11-11T23:08:36.99465708+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"8u3jcmsu"}}
+{"time":"2024-11-11T23:08:36.99470938+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"8u3jcmsu"}}
+{"time":"2024-11-11T23:08:37.358698606+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T23:09:46.889884914+09:00","level":"INFO","msg":"stream: closing","id":"8u3jcmsu"}
+{"time":"2024-11-11T23:09:46.889921003+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T23:09:46.891294926+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T23:09:47.832157417+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-11T23:09:48.087959159+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"8u3jcmsu"}}
+{"time":"2024-11-11T23:09:48.088024293+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"8u3jcmsu"}}
+{"time":"2024-11-11T23:09:48.088057657+09:00","level":"INFO","msg":"sender: closed","stream_id":"8u3jcmsu"}
+{"time":"2024-11-11T23:09:48.088116289+09:00","level":"INFO","msg":"stream: closed","id":"8u3jcmsu"}

@@ -52,14 +52,11 @@ class ViTBase16(nn.Module):
 
     def __init__(self):
         super().__init__()
-        total_model = timm.create_model('vit_base_patch16_224', pretrained=True)
-        self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
-        self.fc = nn.Sequential(*list(total_model.children()))[-1]
+        self.model = timm.create_model('vit_base_patch16_224', pretrained=True)
         
     def forward(self, samples):
         pred = dict()
-        pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
+        pred['logits'] = self.model(samples)
         return pred
 
 

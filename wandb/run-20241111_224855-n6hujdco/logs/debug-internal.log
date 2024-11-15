@@ -1,0 +1,16 @@
+{"time":"2024-11-11T22:48:55.694015165+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:48:55.694037308+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_224855-n6hujdco/logs/debug-core.log"}
+{"time":"2024-11-11T22:48:55.803208375+09:00","level":"INFO","msg":"created new stream","id":"n6hujdco"}
+{"time":"2024-11-11T22:48:55.803253271+09:00","level":"INFO","msg":"stream: started","id":"n6hujdco"}
+{"time":"2024-11-11T22:48:55.803433665+09:00","level":"INFO","msg":"sender: started","stream_id":"n6hujdco"}
+{"time":"2024-11-11T22:48:55.803372829+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"n6hujdco"}}
+{"time":"2024-11-11T22:48:55.803342631+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"n6hujdco"}}
+{"time":"2024-11-11T22:48:56.161583836+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T22:49:58.844985591+09:00","level":"INFO","msg":"stream: closing","id":"n6hujdco"}
+{"time":"2024-11-11T22:49:58.845042029+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T22:49:58.846147539+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T22:49:59.790109663+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-11T22:50:00.034055509+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"n6hujdco"}}
+{"time":"2024-11-11T22:50:00.03411363+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"n6hujdco"}}
+{"time":"2024-11-11T22:50:00.03413488+09:00","level":"INFO","msg":"sender: closed","stream_id":"n6hujdco"}
+{"time":"2024-11-11T22:50:00.034197991+09:00","level":"INFO","msg":"stream: closed","id":"n6hujdco"}

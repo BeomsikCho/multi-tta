@@ -1,0 +1,16 @@
+{"time":"2024-11-11T22:51:23.763538581+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:51:23.763558459+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_225123-cbwvrmi4/logs/debug-core.log"}
+{"time":"2024-11-11T22:51:23.873327758+09:00","level":"INFO","msg":"created new stream","id":"cbwvrmi4"}
+{"time":"2024-11-11T22:51:23.873385729+09:00","level":"INFO","msg":"stream: started","id":"cbwvrmi4"}
+{"time":"2024-11-11T22:51:23.873473747+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"cbwvrmi4"}}
+{"time":"2024-11-11T22:51:23.873552608+09:00","level":"INFO","msg":"sender: started","stream_id":"cbwvrmi4"}
+{"time":"2024-11-11T22:51:23.87344887+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"cbwvrmi4"}}
+{"time":"2024-11-11T22:51:25.563035307+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T22:53:41.614623152+09:00","level":"INFO","msg":"stream: closing","id":"cbwvrmi4"}
+{"time":"2024-11-11T22:53:41.614673718+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T22:53:41.615551363+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-11T22:53:42.667920728+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-11T22:53:42.920308917+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"cbwvrmi4"}}
+{"time":"2024-11-11T22:53:42.920353102+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"cbwvrmi4"}}
+{"time":"2024-11-11T22:53:42.920365816+09:00","level":"INFO","msg":"sender: closed","stream_id":"cbwvrmi4"}
+{"time":"2024-11-11T22:53:42.920468953+09:00","level":"INFO","msg":"stream: closed","id":"cbwvrmi4"}

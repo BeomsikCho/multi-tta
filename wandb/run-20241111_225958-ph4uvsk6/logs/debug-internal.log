@@ -1,0 +1,11 @@
+{"time":"2024-11-11T22:59:58.939800733+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-11T22:59:58.939822675+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241111_225958-ph4uvsk6/logs/debug-core.log"}
+{"time":"2024-11-11T22:59:59.050360722+09:00","level":"INFO","msg":"created new stream","id":"ph4uvsk6"}
+{"time":"2024-11-11T22:59:59.050407982+09:00","level":"INFO","msg":"stream: started","id":"ph4uvsk6"}
+{"time":"2024-11-11T22:59:59.050511229+09:00","level":"INFO","msg":"sender: started","stream_id":"ph4uvsk6"}
+{"time":"2024-11-11T22:59:59.050460352+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ph4uvsk6"}}
+{"time":"2024-11-11T22:59:59.050551045+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ph4uvsk6"}}
+{"time":"2024-11-11T22:59:59.371459412+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-11T23:05:54.099555468+09:00","level":"INFO","msg":"stream: closing","id":"ph4uvsk6"}
+{"time":"2024-11-11T23:05:54.099599943+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-11T23:05:54.100912529+09:00","level":"INFO","msg":"Stopped system monitor"}
