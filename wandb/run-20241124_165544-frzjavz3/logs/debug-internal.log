@@ -1,0 +1,11 @@
+{"time":"2024-11-24T16:55:44.936184115+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T16:55:44.936203723+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_165544-frzjavz3/logs/debug-core.log"}
+{"time":"2024-11-24T16:55:45.046027566+09:00","level":"INFO","msg":"created new stream","id":"frzjavz3"}
+{"time":"2024-11-24T16:55:45.046069998+09:00","level":"INFO","msg":"stream: started","id":"frzjavz3"}
+{"time":"2024-11-24T16:55:45.046148638+09:00","level":"INFO","msg":"sender: started","stream_id":"frzjavz3"}
+{"time":"2024-11-24T16:55:45.046103511+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"frzjavz3"}}
+{"time":"2024-11-24T16:55:45.046217058+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"frzjavz3"}}
+{"time":"2024-11-24T16:55:45.459672298+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T16:56:11.060129434+09:00","level":"INFO","msg":"stream: closing","id":"frzjavz3"}
+{"time":"2024-11-24T16:56:11.060177646+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T16:56:11.061086992+09:00","level":"INFO","msg":"Stopped system monitor"}

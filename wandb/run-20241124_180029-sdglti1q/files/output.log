@@ -1,0 +1,230 @@
+Detected DataParallel model. Using model.module for modification.
+model.blocks.0.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.0.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.1.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.1.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.2.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.2.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.3.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.3.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.4.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.4.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.5.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.5.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.6.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.6.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.7.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.7.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.8.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.8.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.9.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.9.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.10.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.10.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.11.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.11.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+Re-wrapped the model into DataParallel.
+  0%|                                                                                                              | 0/3125 [01:38<?, ?it/s]
+> /home/bscho/works/multi-tta/trainers/test_trainer.py(100)mc_dropout()
+-> for t in range(T):
+*** NameError: name 'pred' is not defined
+{'logits': tensor([[ 3.1941, -0.7709,  3.2173,  ...,  0.8453,  0.5337, -0.8669],
+        [ 0.7226, -2.9557, -0.0763,  ..., -0.0247, -0.0167, -2.3944],
+        [-0.7546, -2.6157,  1.4652,  ..., -1.0686, -0.0628, -2.3055],
+        ...,
+        [ 1.0116, -2.2290, -0.0149,  ...,  0.0627,  0.0691, -2.1757],
+        [-1.1706, -2.7481,  1.1781,  ..., -1.1862,  0.1238, -1.9445],
+        [ 3.0428, -0.7527,  3.7713,  ..., -0.3314,  0.7552, -1.4620]],
+       device='cuda:0', grad_fn=<GatherBackward>)}
+*** NameError: name 'pred' is not defined
+*** NameError: name 'pred' is not defined
+dict_keys(['logits'])
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 35, in train_step
+    pred, uncertainty = self.mc_dropout(model, samples)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 100, in mc_dropout
+    for t in range(T):
+             ^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

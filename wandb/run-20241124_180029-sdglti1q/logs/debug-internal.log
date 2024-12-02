@@ -1,0 +1,16 @@
+{"time":"2024-11-24T18:00:29.960110478+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T18:00:29.960134063+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_180029-sdglti1q/logs/debug-core.log"}
+{"time":"2024-11-24T18:00:30.069868307+09:00","level":"INFO","msg":"created new stream","id":"sdglti1q"}
+{"time":"2024-11-24T18:00:30.069921478+09:00","level":"INFO","msg":"stream: started","id":"sdglti1q"}
+{"time":"2024-11-24T18:00:30.070081664+09:00","level":"INFO","msg":"sender: started","stream_id":"sdglti1q"}
+{"time":"2024-11-24T18:00:30.069987905+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"sdglti1q"}}
+{"time":"2024-11-24T18:00:30.070038501+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"sdglti1q"}}
+{"time":"2024-11-24T18:00:30.401479514+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T18:02:12.0232399+09:00","level":"INFO","msg":"stream: closing","id":"sdglti1q"}
+{"time":"2024-11-24T18:02:12.023284215+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T18:02:12.024403611+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T18:02:13.185089832+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T18:02:13.653935648+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"sdglti1q"}}
+{"time":"2024-11-24T18:02:13.653992406+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"sdglti1q"}}
+{"time":"2024-11-24T18:02:13.654011993+09:00","level":"INFO","msg":"sender: closed","stream_id":"sdglti1q"}
+{"time":"2024-11-24T18:02:13.654090102+09:00","level":"INFO","msg":"stream: closed","id":"sdglti1q"}

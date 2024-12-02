@@ -1,0 +1,315 @@
+
+module
+module.model
+module.model.patch_embed
+module.model.patch_embed.proj
+module.model.patch_embed.norm
+module.model.pos_drop
+module.model.patch_drop
+module.model.norm_pre
+module.model.blocks
+module.model.blocks.0
+module.model.blocks.0.norm1
+module.model.blocks.0.attn
+module.model.blocks.0.attn.qkv
+module.model.blocks.0.attn.q_norm
+module.model.blocks.0.attn.k_norm
+module.model.blocks.0.attn.attn_drop
+module.model.blocks.0.attn.proj
+module.model.blocks.0.attn.proj_drop
+module.model.blocks.0.ls1
+module.model.blocks.0.drop_path1
+module.model.blocks.0.norm2
+module.model.blocks.0.mlp
+module.model.blocks.0.mlp.fc1
+module.model.blocks.0.mlp.act
+module.model.blocks.0.mlp.drop1
+module.model.blocks.0.mlp.norm
+module.model.blocks.0.mlp.fc2
+module.model.blocks.0.mlp.drop2
+module.model.blocks.0.ls2
+module.model.blocks.0.drop_path2
+module.model.blocks.1
+module.model.blocks.1.norm1
+module.model.blocks.1.attn
+module.model.blocks.1.attn.qkv
+module.model.blocks.1.attn.q_norm
+module.model.blocks.1.attn.k_norm
+module.model.blocks.1.attn.attn_drop
+module.model.blocks.1.attn.proj
+module.model.blocks.1.attn.proj_drop
+module.model.blocks.1.ls1
+module.model.blocks.1.drop_path1
+module.model.blocks.1.norm2
+module.model.blocks.1.mlp
+module.model.blocks.1.mlp.fc1
+module.model.blocks.1.mlp.act
+module.model.blocks.1.mlp.drop1
+module.model.blocks.1.mlp.norm
+module.model.blocks.1.mlp.fc2
+module.model.blocks.1.mlp.drop2
+module.model.blocks.1.ls2
+module.model.blocks.1.drop_path2
+module.model.blocks.2
+module.model.blocks.2.norm1
+module.model.blocks.2.attn
+module.model.blocks.2.attn.qkv
+module.model.blocks.2.attn.q_norm
+module.model.blocks.2.attn.k_norm
+module.model.blocks.2.attn.attn_drop
+module.model.blocks.2.attn.proj
+module.model.blocks.2.attn.proj_drop
+module.model.blocks.2.ls1
+module.model.blocks.2.drop_path1
+module.model.blocks.2.norm2
+module.model.blocks.2.mlp
+module.model.blocks.2.mlp.fc1
+module.model.blocks.2.mlp.act
+module.model.blocks.2.mlp.drop1
+module.model.blocks.2.mlp.norm
+module.model.blocks.2.mlp.fc2
+module.model.blocks.2.mlp.drop2
+module.model.blocks.2.ls2
+module.model.blocks.2.drop_path2
+module.model.blocks.3
+module.model.blocks.3.norm1
+module.model.blocks.3.attn
+module.model.blocks.3.attn.qkv
+module.model.blocks.3.attn.q_norm
+module.model.blocks.3.attn.k_norm
+module.model.blocks.3.attn.attn_drop
+module.model.blocks.3.attn.proj
+module.model.blocks.3.attn.proj_drop
+module.model.blocks.3.ls1
+module.model.blocks.3.drop_path1
+module.model.blocks.3.norm2
+module.model.blocks.3.mlp
+module.model.blocks.3.mlp.fc1
+module.model.blocks.3.mlp.act
+module.model.blocks.3.mlp.drop1
+module.model.blocks.3.mlp.norm
+module.model.blocks.3.mlp.fc2
+module.model.blocks.3.mlp.drop2
+module.model.blocks.3.ls2
+module.model.blocks.3.drop_path2
+module.model.blocks.4
+module.model.blocks.4.norm1
+module.model.blocks.4.attn
+module.model.blocks.4.attn.qkv
+module.model.blocks.4.attn.q_norm
+module.model.blocks.4.attn.k_norm
+module.model.blocks.4.attn.attn_drop
+module.model.blocks.4.attn.proj
+module.model.blocks.4.attn.proj_drop
+module.model.blocks.4.ls1
+module.model.blocks.4.drop_path1
+module.model.blocks.4.norm2
+module.model.blocks.4.mlp
+module.model.blocks.4.mlp.fc1
+module.model.blocks.4.mlp.act
+module.model.blocks.4.mlp.drop1
+module.model.blocks.4.mlp.norm
+module.model.blocks.4.mlp.fc2
+module.model.blocks.4.mlp.drop2
+module.model.blocks.4.ls2
+module.model.blocks.4.drop_path2
+module.model.blocks.5
+module.model.blocks.5.norm1
+module.model.blocks.5.attn
+module.model.blocks.5.attn.qkv
+module.model.blocks.5.attn.q_norm
+module.model.blocks.5.attn.k_norm
+module.model.blocks.5.attn.attn_drop
+module.model.blocks.5.attn.proj
+module.model.blocks.5.attn.proj_drop
+module.model.blocks.5.ls1
+module.model.blocks.5.drop_path1
+module.model.blocks.5.norm2
+module.model.blocks.5.mlp
+module.model.blocks.5.mlp.fc1
+module.model.blocks.5.mlp.act
+module.model.blocks.5.mlp.drop1
+module.model.blocks.5.mlp.norm
+module.model.blocks.5.mlp.fc2
+module.model.blocks.5.mlp.drop2
+module.model.blocks.5.ls2
+module.model.blocks.5.drop_path2
+module.model.blocks.6
+module.model.blocks.6.norm1
+module.model.blocks.6.attn
+module.model.blocks.6.attn.qkv
+module.model.blocks.6.attn.q_norm
+module.model.blocks.6.attn.k_norm
+module.model.blocks.6.attn.attn_drop
+module.model.blocks.6.attn.proj
+module.model.blocks.6.attn.proj_drop
+module.model.blocks.6.ls1
+module.model.blocks.6.drop_path1
+module.model.blocks.6.norm2
+module.model.blocks.6.mlp
+module.model.blocks.6.mlp.fc1
+module.model.blocks.6.mlp.act
+module.model.blocks.6.mlp.drop1
+module.model.blocks.6.mlp.norm
+module.model.blocks.6.mlp.fc2
+module.model.blocks.6.mlp.drop2
+module.model.blocks.6.ls2
+module.model.blocks.6.drop_path2
+module.model.blocks.7
+module.model.blocks.7.norm1
+module.model.blocks.7.attn
+module.model.blocks.7.attn.qkv
+module.model.blocks.7.attn.q_norm
+module.model.blocks.7.attn.k_norm
+module.model.blocks.7.attn.attn_drop
+module.model.blocks.7.attn.proj
+module.model.blocks.7.attn.proj_drop
+module.model.blocks.7.ls1
+module.model.blocks.7.drop_path1
+module.model.blocks.7.norm2
+module.model.blocks.7.mlp
+module.model.blocks.7.mlp.fc1
+module.model.blocks.7.mlp.act
+module.model.blocks.7.mlp.drop1
+module.model.blocks.7.mlp.norm
+module.model.blocks.7.mlp.fc2
+module.model.blocks.7.mlp.drop2
+module.model.blocks.7.ls2
+module.model.blocks.7.drop_path2
+module.model.blocks.8
+module.model.blocks.8.norm1
+module.model.blocks.8.attn
+module.model.blocks.8.attn.qkv
+module.model.blocks.8.attn.q_norm
+module.model.blocks.8.attn.k_norm
+module.model.blocks.8.attn.attn_drop
+module.model.blocks.8.attn.proj
+module.model.blocks.8.attn.proj_drop
+module.model.blocks.8.ls1
+module.model.blocks.8.drop_path1
+module.model.blocks.8.norm2
+module.model.blocks.8.mlp
+module.model.blocks.8.mlp.fc1
+module.model.blocks.8.mlp.act
+module.model.blocks.8.mlp.drop1
+module.model.blocks.8.mlp.norm
+module.model.blocks.8.mlp.fc2
+module.model.blocks.8.mlp.drop2
+module.model.blocks.8.ls2
+module.model.blocks.8.drop_path2
+module.model.blocks.9
+module.model.blocks.9.norm1
+module.model.blocks.9.attn
+module.model.blocks.9.attn.qkv
+module.model.blocks.9.attn.q_norm
+module.model.blocks.9.attn.k_norm
+module.model.blocks.9.attn.attn_drop
+module.model.blocks.9.attn.proj
+module.model.blocks.9.attn.proj_drop
+module.model.blocks.9.ls1
+module.model.blocks.9.drop_path1
+module.model.blocks.9.norm2
+module.model.blocks.9.mlp
+module.model.blocks.9.mlp.fc1
+module.model.blocks.9.mlp.act
+module.model.blocks.9.mlp.drop1
+module.model.blocks.9.mlp.norm
+module.model.blocks.9.mlp.fc2
+module.model.blocks.9.mlp.drop2
+module.model.blocks.9.ls2
+module.model.blocks.9.drop_path2
+module.model.blocks.10
+module.model.blocks.10.norm1
+module.model.blocks.10.attn
+module.model.blocks.10.attn.qkv
+module.model.blocks.10.attn.q_norm
+module.model.blocks.10.attn.k_norm
+module.model.blocks.10.attn.attn_drop
+module.model.blocks.10.attn.proj
+module.model.blocks.10.attn.proj_drop
+module.model.blocks.10.ls1
+module.model.blocks.10.drop_path1
+module.model.blocks.10.norm2
+module.model.blocks.10.mlp
+module.model.blocks.10.mlp.fc1
+module.model.blocks.10.mlp.act
+module.model.blocks.10.mlp.drop1
+module.model.blocks.10.mlp.norm
+module.model.blocks.10.mlp.fc2
+module.model.blocks.10.mlp.drop2
+module.model.blocks.10.ls2
+module.model.blocks.10.drop_path2
+module.model.blocks.11
+module.model.blocks.11.norm1
+module.model.blocks.11.attn
+module.model.blocks.11.attn.qkv
+module.model.blocks.11.attn.q_norm
+module.model.blocks.11.attn.k_norm
+module.model.blocks.11.attn.attn_drop
+module.model.blocks.11.attn.proj
+module.model.blocks.11.attn.proj_drop
+module.model.blocks.11.ls1
+module.model.blocks.11.drop_path1
+module.model.blocks.11.norm2
+module.model.blocks.11.mlp
+module.model.blocks.11.mlp.fc1
+module.model.blocks.11.mlp.act
+module.model.blocks.11.mlp.drop1
+module.model.blocks.11.mlp.norm
+module.model.blocks.11.mlp.fc2
+module.model.blocks.11.mlp.drop2
+module.model.blocks.11.ls2
+module.model.blocks.11.drop_path2
+module.model.norm
+module.model.fc_norm
+module.model.head_drop
+module.model.head
+  0%|                                                                                                              | 0/3125 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 35, in train_step
+    pred, uncertainty = self.mc_dropout(model, samples)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 80, in mc_dropout
+    pred = model(samples)
+           ^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 183, in forward
+    inputs, module_kwargs = self.scatter(inputs, kwargs, self.device_ids)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 207, in scatter
+    return scatter_kwargs(inputs, kwargs, device_ids, dim=self.dim)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/scatter_gather.py", line 88, in scatter_kwargs
+    scattered_inputs = scatter(inputs, target_gpus, dim) if inputs else []
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/scatter_gather.py", line 75, in scatter
+    res = scatter_map(inputs)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/scatter_gather.py", line 62, in scatter_map
+    return list(zip(*map(scatter_map, obj)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/scatter_gather.py", line 58, in scatter_map
+    return Scatter.apply(target_gpus, None, dim, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/_functions.py", line 104, in forward
+    outputs = comm.scatter(input, target_gpus, chunk_sizes, ctx.dim, streams)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/parallel/comm.py", line 205, in scatter
+    return tuple(torch._C._scatter(tensor, devices, chunk_sizes, dim, streams))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

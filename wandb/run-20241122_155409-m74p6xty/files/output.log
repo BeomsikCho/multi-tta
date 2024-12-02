@@ -1,0 +1,27 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 59/59 [00:49<00:00,  1.18it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 59/59 [00:18<00:00,  3.20it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 391/391 [05:28<00:00,  1.19it/s]
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████████     | 372/391 [01:53<00:05,  3.29it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 104, in validate_step
+    is_correct += (pred['logits'].argmax(dim=1) == target).sum().item()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 49, in train
+    results = self.validate_step(model, dataloader)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 99, in validate_step
+    with torch.no_grad():
+         ^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/autograd/grad_mode.py", line 84, in __exit__
+    def __exit__(self, exc_type: Any, exc_value: Any, traceback: Any) -> None:
+
+KeyboardInterrupt

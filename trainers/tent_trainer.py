@@ -38,8 +38,7 @@ class TentTrainer(BaseTrainer):
             num_sample = target.shape[0]
             total_sample += num_sample
             wandb.log({
-                "step_train_loss": loss.item() / num_sample,
-                "cumulative_train_loss": train_loss / total_sample
+                "step_train_loss": loss.item() / num_sample
             })
 
         return model
@@ -51,8 +50,6 @@ class TentTrainer(BaseTrainer):
         model.train()
         model = model.to(device)
         
-        if adapt_layers != None: return model
-
         model.requires_grad_(False)
         for adapt_layer in adapt_layers:
             try:

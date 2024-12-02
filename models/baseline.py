@@ -2,7 +2,9 @@ import torch.nn as nn
 from torch.nn.functional import adaptive_avg_pool2d
 
 import timm
+from transformers import AutoImageProcessor, ViTForImageClassification
 from torchvision.models import resnet50, ResNet50_Weights
+
 
 from abc import *
 
@@ -52,10 +54,17 @@ class ViTBase16(nn.Module):
 
     def __init__(self):
         super().__init__()
-        self.model = timm.create_model('vit_base_patch16_224', pretrained=True)
-        
+        # self.model = timm.create_model('vit_base_patch16_224', pretrained=True)
+        self.model = ViTForImageClassification.from_pretrained("google/vit-base-patch16-224-in21k")
+        self.image_processor = ViTForImageClassification.from_pretrained("google/vit-base-patch16-224-in21k")
+
     def forward(self, samples):
         pred = dict()
+        
+        # samples = self.image_processor(samples)
+        output = self.model(samples)
+        breakpoint()
+
         pred['logits'] = self.model(samples)
         return pred
 

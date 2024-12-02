@@ -1,0 +1,45 @@
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+dropout 삽입!
+  0%|                                                                                                              | 0/3125 [00:39<?, ?it/s]
+> /home/bscho/works/multi-tta/trainers/test_trainer.py(39)train_step()
+-> loss = softmax_entropy(pred['logits']).mean(0)
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 39, in train_step
+    loss = softmax_entropy(pred['logits']).mean(0)
+           ^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

@@ -1,0 +1,11 @@
+{"time":"2024-11-22T15:54:09.503751918+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-22T15:54:09.503764401+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241122_155409-m74p6xty/logs/debug-core.log"}
+{"time":"2024-11-22T15:54:09.611135003+09:00","level":"INFO","msg":"created new stream","id":"m74p6xty"}
+{"time":"2024-11-22T15:54:09.611178816+09:00","level":"INFO","msg":"stream: started","id":"m74p6xty"}
+{"time":"2024-11-22T15:54:09.61128552+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"m74p6xty"}}
+{"time":"2024-11-22T15:54:09.61134302+09:00","level":"INFO","msg":"sender: started","stream_id":"m74p6xty"}
+{"time":"2024-11-22T15:54:09.611249451+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"m74p6xty"}}
+{"time":"2024-11-22T15:54:09.922958516+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-22T16:02:43.920826881+09:00","level":"INFO","msg":"stream: closing","id":"m74p6xty"}
+{"time":"2024-11-22T16:02:43.920875554+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-22T16:02:43.921658789+09:00","level":"INFO","msg":"Stopped system monitor"}

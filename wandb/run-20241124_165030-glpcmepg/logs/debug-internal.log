@@ -1,0 +1,16 @@
+{"time":"2024-11-24T16:50:30.403942189+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T16:50:30.403963269+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_165030-glpcmepg/logs/debug-core.log"}
+{"time":"2024-11-24T16:50:30.513020711+09:00","level":"INFO","msg":"created new stream","id":"glpcmepg"}
+{"time":"2024-11-24T16:50:30.513068072+09:00","level":"INFO","msg":"stream: started","id":"glpcmepg"}
+{"time":"2024-11-24T16:50:30.513175637+09:00","level":"INFO","msg":"sender: started","stream_id":"glpcmepg"}
+{"time":"2024-11-24T16:50:30.513133557+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"glpcmepg"}}
+{"time":"2024-11-24T16:50:30.513247544+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"glpcmepg"}}
+{"time":"2024-11-24T16:50:30.800323053+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T16:51:34.618645833+09:00","level":"INFO","msg":"stream: closing","id":"glpcmepg"}
+{"time":"2024-11-24T16:51:34.618686641+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T16:51:34.619657294+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T16:51:35.475821727+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T16:51:35.71707438+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"glpcmepg"}}
+{"time":"2024-11-24T16:51:35.717136578+09:00","level":"INFO","msg":"sender: closed","stream_id":"glpcmepg"}
+{"time":"2024-11-24T16:51:35.717129545+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"glpcmepg"}}
+{"time":"2024-11-24T16:51:35.717263991+09:00","level":"INFO","msg":"stream: closed","id":"glpcmepg"}

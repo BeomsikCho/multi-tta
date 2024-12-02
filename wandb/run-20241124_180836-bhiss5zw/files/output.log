@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 42, in train
+    model = self.builder.build_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/utils/builder.py", line 34, in build_model
+    model = models.ViTBase16()
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/models/baseline.py", line 57, in __init__
+    self.module = nn.Sequential(**list(self.model.children()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: torch.nn.modules.container.Sequential() argument after ** must be a mapping, not list

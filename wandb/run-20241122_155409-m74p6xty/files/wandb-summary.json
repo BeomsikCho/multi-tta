@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":514},"_timestamp":1.7322588507059224e+09,"_runtime":401.204471307,"_step":450,"step_train_loss":0.029454898834228516,"domain_accuracy":{"_type":"plotly-file","sha256":"a7dcfa9f5c29048a3c73a80ae1c8c1ae86730725f91828484a9ae76e4c29f53c","size":8366,"path":"media/plotly/domain_accuracy_59_a7dcfa9f5c29048a3c73.plotly.json"}}

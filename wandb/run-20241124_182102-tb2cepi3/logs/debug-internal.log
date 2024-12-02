@@ -1,0 +1,16 @@
+{"time":"2024-11-24T18:21:02.584800951+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T18:21:02.584820318+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_182102-tb2cepi3/logs/debug-core.log"}
+{"time":"2024-11-24T18:21:02.693977894+09:00","level":"INFO","msg":"created new stream","id":"tb2cepi3"}
+{"time":"2024-11-24T18:21:02.694022088+09:00","level":"INFO","msg":"stream: started","id":"tb2cepi3"}
+{"time":"2024-11-24T18:21:02.694116478+09:00","level":"INFO","msg":"sender: started","stream_id":"tb2cepi3"}
+{"time":"2024-11-24T18:21:02.694074729+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tb2cepi3"}}
+{"time":"2024-11-24T18:21:02.694204937+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tb2cepi3"}}
+{"time":"2024-11-24T18:21:03.008436202+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T18:21:31.343719993+09:00","level":"INFO","msg":"stream: closing","id":"tb2cepi3"}
+{"time":"2024-11-24T18:21:31.34375002+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T18:21:31.344486906+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T18:21:32.584513985+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T18:21:32.827935052+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tb2cepi3"}}
+{"time":"2024-11-24T18:21:32.828022309+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tb2cepi3"}}
+{"time":"2024-11-24T18:21:32.82804368+09:00","level":"INFO","msg":"sender: closed","stream_id":"tb2cepi3"}
+{"time":"2024-11-24T18:21:32.82809108+09:00","level":"INFO","msg":"stream: closed","id":"tb2cepi3"}

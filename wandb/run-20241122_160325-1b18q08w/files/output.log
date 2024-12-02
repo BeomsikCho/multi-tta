@@ -1,0 +1,13 @@
+  0%|                                                                                                                | 0/59 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/eata_trainer.py", line 35, in train_step
+    loss = loss_fn.total_loss(pred['logits']).mean(0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: EataLoss.total_loss() missing 1 required positional argument: 'outputs'

@@ -1,0 +1,40 @@
+  0%|                                                                                                              | 0/3125 [01:51<?, ?it/s]
+> /home/bscho/works/multi-tta/trainers/test_trainer.py(83)mc_dropout()
+-> uncertainty = torch.sqrt(sq_mean - mean ** 2)  # Var(X) = E[X^2] - (E[X])^2
+> /home/bscho/works/multi-tta/trainers/test_trainer.py(84)mc_dropout()
+-> return mean, uncertainty.mean(-1)
+tensor([[       nan, 1.7263e-04,        nan,  ..., 1.5259e-05,        nan,
+                nan],
+        [0.0000e+00, 5.4592e-04,        nan,  ..., 1.2207e-04, 0.0000e+00,
+         6.9053e-04],
+        [7.7204e-04,        nan, 1.2207e-04,  ...,        nan,        nan,
+                nan],
+        ...,
+        [2.1143e-04, 6.1035e-05, 3.2297e-04,  ..., 6.1035e-05,        nan,
+         1.3648e-04],
+        [3.6621e-04, 2.1143e-04,        nan,  ...,        nan,        nan,
+                nan],
+        [6.4594e-04,        nan, 4.7842e-03,  ..., 9.1349e-04, 0.0000e+00,
+                nan]], device='cuda:0', grad_fn=<SqrtBackward0>)
+torch.Size([16, 1000])
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 35, in train_step
+    pred, uncertainty = self.mc_dropout(model, samples)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 84, in mc_dropout
+    return mean, uncertainty.mean(-1)
+           ^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

@@ -1,0 +1,217 @@
+model.blocks.0.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.0.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.1.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.1.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.2.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.2.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.3.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.3.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.4.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.4.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.5.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.5.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.6.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.6.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.7.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.7.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.8.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.8.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.9.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.9.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.10.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.10.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+model.blocks.11.attn에 dropout 삽입! : class = Attention(
+  (qkv): Linear(in_features=768, out_features=2304, bias=True)
+  (q_norm): Identity()
+  (k_norm): Identity()
+  (attn_drop): Dropout(p=0.0, inplace=False)
+  (proj): Linear(in_features=768, out_features=768, bias=True)
+  (proj_drop): Dropout(p=0.0, inplace=False)
+)
+model.blocks.11.mlp에 dropout 삽입! : class = Mlp(
+  (fc1): Linear(in_features=768, out_features=3072, bias=True)
+  (act): GELU(approximate='none')
+  (drop1): Dropout(p=0.0, inplace=False)
+  (norm): Identity()
+  (fc2): Linear(in_features=3072, out_features=768, bias=True)
+  (drop2): Dropout(p=0.0, inplace=False)
+)
+  0%|                                                                                                              | 0/3125 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bscho/works/multi-tta/main.py", line 34, in <module>
+    main()
+  File "/home/bscho/works/multi-tta/main.py", line 24, in main
+    trainer.train()
+  File "/home/bscho/works/multi-tta/trainers/base_trainer.py", line 48, in train
+    model = self.train_step(model, dataloader, optimizer)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 35, in train_step
+    pred, uncertainty = self.mc_dropout(model, samples)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/trainers/test_trainer.py", line 99, in mc_dropout
+    pred = model(samples)
+           ^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/anaconda3/envs/multiTTA/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bscho/works/multi-tta/models/baseline.py", line 77, in forward
+    x = torch.cat((cls_token, x), dim=1)  # [B, num_patches + 1, embed_dim]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 768 but got size 196 for tensor number 1 in the list.

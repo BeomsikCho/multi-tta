@@ -1,0 +1,16 @@
+{"time":"2024-11-24T18:08:57.244283525+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T18:08:57.244303744+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_180857-xa2ivsy9/logs/debug-core.log"}
+{"time":"2024-11-24T18:08:57.353156043+09:00","level":"INFO","msg":"created new stream","id":"xa2ivsy9"}
+{"time":"2024-11-24T18:08:57.353203885+09:00","level":"INFO","msg":"stream: started","id":"xa2ivsy9"}
+{"time":"2024-11-24T18:08:57.353309226+09:00","level":"INFO","msg":"sender: started","stream_id":"xa2ivsy9"}
+{"time":"2024-11-24T18:08:57.353270762+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xa2ivsy9"}}
+{"time":"2024-11-24T18:08:57.353366385+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xa2ivsy9"}}
+{"time":"2024-11-24T18:08:57.647736284+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T18:12:28.68463821+09:00","level":"INFO","msg":"stream: closing","id":"xa2ivsy9"}
+{"time":"2024-11-24T18:12:28.684681793+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T18:12:28.685379555+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T18:12:29.628337566+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T18:12:29.84188895+09:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xa2ivsy9"}}
+{"time":"2024-11-24T18:12:29.841939597+09:00","level":"INFO","msg":"sender: closed","stream_id":"xa2ivsy9"}
+{"time":"2024-11-24T18:12:29.841937503+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xa2ivsy9"}}
+{"time":"2024-11-24T18:12:29.842046611+09:00","level":"INFO","msg":"stream: closed","id":"xa2ivsy9"}

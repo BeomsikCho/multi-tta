@@ -1,0 +1,11 @@
+{"time":"2024-11-24T16:48:52.96801076+09:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-24T16:48:52.968030919+09:00","level":"INFO","msg":"created symlink","path":"/home/bscho/works/multi-tta/wandb/run-20241124_164852-jr6d5j4v/logs/debug-core.log"}
+{"time":"2024-11-24T16:48:53.077032865+09:00","level":"INFO","msg":"created new stream","id":"jr6d5j4v"}
+{"time":"2024-11-24T16:48:53.077078612+09:00","level":"INFO","msg":"stream: started","id":"jr6d5j4v"}
+{"time":"2024-11-24T16:48:53.077194714+09:00","level":"INFO","msg":"sender: started","stream_id":"jr6d5j4v"}
+{"time":"2024-11-24T16:48:53.077152172+09:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"jr6d5j4v"}}
+{"time":"2024-11-24T16:48:53.077248496+09:00","level":"INFO","msg":"handler: started","stream_id":{"value":"jr6d5j4v"}}
+{"time":"2024-11-24T16:48:53.391119094+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T16:49:11.756106195+09:00","level":"INFO","msg":"stream: closing","id":"jr6d5j4v"}
+{"time":"2024-11-24T16:49:11.756142835+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T16:49:11.757082098+09:00","level":"INFO","msg":"Stopped system monitor"}
