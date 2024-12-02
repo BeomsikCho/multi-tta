@@ -6,13 +6,6 @@ from utils import setup_cfgs, setup_deterministic
 def initialization():
     setup_deterministic(seed=2024)
     cfgs = setup_cfgs()
-    
-    # wandb.login()
-    # wandb.init(
-    #     project='multiTTA', # Never Revised
-    #     config=cfgs, # Frequentry Revised
-    #     tags=['tent-baseline', 'imagenet-c'] # Frequentry Revised
-    # )
     return cfgs
 
 def main():
