@@ -1,0 +1,23 @@
+model:
+  name: resnet50-gn # [resnet50, resnet50-gn, vit-base]
+
+dataset:
+  name: ImageNetAll
+  path: ./data/
+
+  batch_size: 128
+  num_workers: 16
+  shuffle: True
+
+optimizer:
+  name: SGD
+  lr: 0.00025
+  weight_decay: 0.01
+  momentum: 0.9
+
+trainer:
+  name: LottaTrainer
+
+  e_margin: 2.76 # = math.log(1000)*0.40 : entropy filter에서 사용할 기준 : Uniform Distribution의 Entropy가 log(1000)이므로, 이걸 기준으로 scaling한 것으로 보임.
+  fisher_alpha: 0.05 # sar github의 설명을 따라감
+  d_margin: 2000 # sar github를 따라감
