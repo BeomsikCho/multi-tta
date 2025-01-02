@@ -70,8 +70,10 @@ data/
     ```
 
 ## Train
+To train your model you should instruct the below code to run main.py  
+
 ```bash
-python3 main.py --config train.py --mode train
+python3 main.py --config [path/to/your/config_file] --mode train --device cuda:[gpu_number]
 ```
 
 

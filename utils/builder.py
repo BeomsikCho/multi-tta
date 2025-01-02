@@ -37,7 +37,8 @@ class Builder(object):
 
         if len(device_ids) > 1:
             model = torch.nn.DataParallel(model, device_ids=device_ids)
-        model.to(first_device)
+        else:
+            model.to(first_device)
         return model
 
     def build_dataloaders(self,
@@ -73,6 +74,5 @@ if __name__ == "__main__":
     # Test the operation of Builder class
     builder = Builder()
     model = builder.build_model('resnet-50')
-    breakpoint()
     
 

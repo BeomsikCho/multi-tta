@@ -2,7 +2,7 @@ model:
   name: resnet50 # [resnet50, resnet50-gn, vit-base]
 
 dataset:
-  name: ImageNetAll
+  name: ImageNetC
   path: ./data/
 
   batch_size: 128

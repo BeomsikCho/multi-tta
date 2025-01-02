@@ -24,12 +24,15 @@ class ResNet50RobustBench(nn.Module): # RobustBench에서 torchvision거 그대�
         super().__init__()
         total_model = resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
         self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
+        
+        from timm.models.layers import SelectAdaptivePool2d
+        self.glob_pool = SelectAdaptivePool2d(pool_type='avg', flatten=True) # Revision 필요?
         self.fc = nn.Sequential(*list(total_model.children()))[-1]
     
     def forward(self, samples):
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
+        pred['logits'] = self.fc(self.glob_pool(pred['last_hidden_state']))
         return pred
 
 
@@ -40,12 +43,14 @@ class ResNet50GN(nn.Module):
         super().__init__()
         total_model = timm.create_model('resnet50_gn', pretrained=True)
         self.encoder = nn.Sequential(*list(total_model.children()))[:-2]
+
+        self.global_pool = total_model.global_pool
         self.fc = nn.Sequential(*list(total_model.children()))[-1]
 
     def forward(self, samples):
         pred = dict()
         pred['last_hidden_state'] = self.encoder(samples)
-        pred['logits'] = self.fc(adaptive_avg_pool2d(pred['last_hidden_state'], (1,1)).squeeze())
+        pred['logits'] = self.fc(self.global_pool(pred['last_hidden_state']))
         return pred
 
 
