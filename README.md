@@ -4,15 +4,6 @@ This repostiory is designed to implement unified framework addressing multi type
 
 ## Baseline
 
-### Methods
-The baseline of our methods is as follows:
-* VAE [[paper](https://arxiv.org/abs/1312.6114)]
-* EBM [[paper](https://proceedings.neurips.cc/paper/2019/hash/378a063b8fdb1db941e34f4bde584c7d-Abstract.html)]
-* TEA [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Yuan_TEA_Test-time_Energy_Adaptation_CVPR_2024_paper.html)]
-* iMSDA [[paper](https://proceedings.mlr.press/v162/kong22a.html)]
-* SIG Model [[paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/6cb7246003d556c4d1cbf9c17c392ee3-Abstract-Conference.html)]
-
-
 ### Model
 The baseline of our methods is as follows:
 * microsoft/resnet-50 [[paper](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)] 
